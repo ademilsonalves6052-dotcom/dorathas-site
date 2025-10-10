@@ -17,6 +17,10 @@ import hmAlimentadorTri from './assets/hm_alimentador_trifasico.jpeg'
 import hmDosadorVol from './assets/hm_dosador_volumetrico.jpeg'
 import hmDosadorGrav from './assets/hm_dosador_gravimetrico_novo.jpeg'
 import hmEsteiras from './assets/hm_esteiras_industriais.jpeg'
+import hmMoinhoFresa from './assets/hm_moinho_fresa.jpeg'
+import hmSecagem from './assets/hm_secagem.webp'
+import hmSiloArmazenagem from './assets/hm_silo_armazenagem.jpeg'
+import hmCentralAlimentacao from './assets/hm_central_alimentacao.jpeg'
 
 // Import logos das empresas famosas para cases
 import logo_plastek from './assets/logo_plastek_novo.png';
@@ -145,6 +149,18 @@ function App() {
                 Equipamentos
               </button>
               <button 
+                onClick={() => scrollToSection('software')} 
+                className="px-4 py-2 bg-cyan-500 text-white rounded-lg hover:bg-cyan-600 transition-colors text-sm font-medium"
+              >
+                Software
+              </button>
+              <button 
+                onClick={() => scrollToSection('blog')} 
+                className="px-4 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors text-sm font-medium"
+              >
+                Blog
+              </button>
+              <button 
                 onClick={() => scrollToSection('contato')} 
                 className="px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition-colors text-sm font-medium"
               >
@@ -212,6 +228,18 @@ function App() {
                   className="px-4 py-2 bg-indigo-500 text-white rounded-lg hover:bg-indigo-600 transition-colors text-sm font-medium text-left"
                 >
                   Equipamentos
+                </button>
+                <button 
+                  onClick={() => scrollToSection('software')} 
+                  className="px-4 py-2 bg-cyan-500 text-white rounded-lg hover:bg-cyan-600 transition-colors text-sm font-medium text-left"
+                >
+                  Software
+                </button>
+                <button 
+                  onClick={() => scrollToSection('blog')} 
+                  className="px-4 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors text-sm font-medium text-left"
+                >
+                  Blog
                 </button>
                 <button 
                   onClick={() => scrollToSection('contato')} 
@@ -418,8 +446,12 @@ function App() {
                 <div className="flex items-start">
                   <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3"></div>
                   <div>
-                    <h4 className="font-semibold text-gray-800">Materiais Especializados</h4>
-                    <p className="text-gray-600">Baquelite, resinas fenólicas, epóxi, poliuretano e outros materiais termofixos.</p>
+                    <h4 className="font-semibold text-gray-800">Materiais Termofixos para Moldagem por Compressão e Transferência</h4>
+                    <div className="text-gray-600 space-y-2">
+                      <p><strong>• Fenólica (Baquelite):</strong> Resina resistente ao calor e à eletricidade, ideal para peças técnicas e isoladores elétricos.</p>
+                      <p><strong>• Melamínica:</strong> Alta dureza e resistência a riscos, usada em utensílios domésticos e componentes elétricos.</p>
+                      <p><strong>• Poliéster com Fibra de Vidro (BMC/SMC):</strong> Compósito leve e resistente, indicado para peças estruturais e carcaças técnicas.</p>
+                    </div>
                   </div>
                 </div>
 
@@ -473,8 +505,8 @@ function App() {
                 className="w-full h-48 object-cover rounded-lg shadow-lg"
               />
               <img 
-                src={dorathasCentroUsinagem} 
-                alt="Moldes e Componentes" 
+                src={dorathasMaquinaInjecao} 
+                alt="Máquina de Injeção" 
                 className="w-full h-48 object-cover rounded-lg shadow-lg"
               />
             </div>
@@ -500,8 +532,8 @@ function App() {
                 <div className="flex items-start">
                   <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3"></div>
                   <div>
-                    <h4 className="font-semibold text-gray-800">Moldes para Alumínio</h4>
-                    <p className="text-gray-600">Moldes especializados para fundição e conformação de alumínio.</p>
+                    <h4 className="font-semibold text-gray-800">Moldes para Injeção de Alumínio</h4>
+                    <p className="text-gray-600">Moldes projetados exclusivamente para o processo de injeção de alumínio, garantindo precisão dimensional e bom acabamento das peças.</p>
                   </div>
                 </div>
 
@@ -509,7 +541,7 @@ function App() {
                   <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3"></div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Moldes para Termofixos</h4>
-                    <p className="text-gray-600">Moldes para prensagem de materiais termofixos com alta precisão.</p>
+                    <p className="text-gray-600">Moldes utilizados na compactação e injeção de materiais termofixos, com alta precisão e durabilidade.</p>
                   </div>
                 </div>
               </div>
@@ -528,43 +560,54 @@ function App() {
 
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div>
-              <h3 className="text-2xl font-semibold text-gray-800 mb-6">Usinagem CNC</h3>
+              <h3 className="text-2xl font-semibold text-gray-800 mb-6">Serviços e Desenvolvimento de Peças Usinadas</h3>
               <p className="text-gray-600 mb-6">
-                Oferecemos serviços completos de usinagem de precisão utilizando equipamentos CNC 
-                de última geração. Com mais de 25 anos de experiência no ramo, atendemos diversos 
-                segmentos industriais com qualidade e pontualidade.
+                Você está procurando empresas que fazem serviços e desenvolvimento de peças usinadas de pequeno porte em tornos automáticos e CNC? 
+                Então você veio ao lugar certo. Nós representamos empresas que oferecem soluções completas em usinagem de peças, desde o projeto até a execução.
               </p>
+              
+              <p className="text-gray-600 mb-6">
+                Temos tornos automáticos e CNC de última geração, que permitem usinar peças com precisão e rapidez. Usamos materiais como latão, alumínio e aço, 
+                para produzir peças usinadas de diversos tipos, como parafusos, porcas, pinos, buchas, engrenagens etc. Estamos situados em Limeira SP, 
+                mas atendemos clientes em toda a região e em todo o Brasil.
+              </p>
+
+              <div className="bg-green-50 p-4 rounded-lg mb-6">
+                <p className="text-green-800 font-semibold">
+                  Todas as empresas que nós representamos são certificadas pela ISO 9000, garantindo a qualidade e a confiabilidade dos seus serviços.
+                </p>
+              </div>
 
               <div className="space-y-4">
                 <div className="flex items-start">
                   <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3"></div>
                   <div>
+                    <h4 className="font-semibold text-gray-800">Tornos Automáticos e CNC</h4>
+                    <p className="text-gray-600">Equipamentos de última geração para usinagem de peças de pequeno porte com precisão e rapidez.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3"></div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800">Materiais Diversos</h4>
+                    <p className="text-gray-600">Latão, alumínio, aço e outros materiais para produção de parafusos, porcas, pinos, buchas, engrenagens.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3"></div>
+                  <div>
                     <h4 className="font-semibold text-gray-800">Centros de Usinagem Vertical</h4>
-                    <p className="text-gray-600">Equipamentos de alta precisão para usinagem de peças até 800kg com cursos extensos.</p>
+                    <p className="text-gray-600">Equipamentos de alta precisão para usinagem de peças até 800kg com cursos extensos (até 1000mm).</p>
                   </div>
                 </div>
 
                 <div className="flex items-start">
                   <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3"></div>
                   <div>
-                    <h4 className="font-semibold text-gray-800">Fresadoras Ferramenteiras</h4>
-                    <p className="text-gray-600">Fresadoras de alta precisão para fabricação de ferramentas e moldes.</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3"></div>
-                  <div>
-                    <h4 className="font-semibold text-gray-800">Retífica Plana</h4>
-                    <p className="text-gray-600">Acabamento de superfície com alta precisão dimensional.</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3"></div>
-                  <div>
-                    <h4 className="font-semibold text-gray-800">Rosqueamento</h4>
-                    <p className="text-gray-600">Rosqueadeira elétrica com braço articulado para roscas M3 a M16.</p>
+                    <h4 className="font-semibold text-gray-800">Fresadoras e Retíficas</h4>
+                    <p className="text-gray-600">Fresadoras ferramenteiras de alta precisão e retífica plana para acabamento dimensional superior.</p>
                   </div>
                 </div>
               </div>
@@ -722,12 +765,66 @@ function App() {
             </div>
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="w-full h-48 bg-gray-200 flex items-center justify-center">
-                <span className="text-gray-500 text-lg">Moinhos Fresa</span>
-              </div>
+              <img 
+                src={hmMoinhoFresa} 
+                alt="Moinhos Fresa" 
+                className="w-full h-48 object-cover"
+              />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">Moinhos Fresa</h3>
-                <p className="text-gray-600">Moagem eficiente de materiais plásticos e outros compostos.</p>
+                <p className="text-gray-600">
+                  Equipamentos robustos que trituram materiais plásticos, transformando-os em partículas uniformes para reaproveitamento. 
+                  Alta durabilidade, fáceis de operar, manutenção simples. Essenciais para reciclagem e sustentabilidade. 
+                  Garantia de 1 ano contra defeitos de fabricação.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img 
+                src={hmSecagem} 
+                alt="Sistemas de Secagem" 
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">Sistemas de Secagem</h3>
+                <p className="text-gray-600">
+                  Equipamentos indispensáveis para eliminar umidade dos grânulos plásticos antes do processamento. 
+                  Com controle preciso de temperatura, otimizam o consumo de energia e garantem qualidade, 
+                  evitando defeitos como bolhas, trincas ou perda de resistência. Garantia de 1 ano.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img 
+                src={hmSiloArmazenagem} 
+                alt="Silos de Armazenagem" 
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">Silos de Armazenagem</h3>
+                <p className="text-gray-600">
+                  Reservatórios projetados para armazenar materiais plásticos, protegendo contra contaminação e umidade. 
+                  Design durável com visor, tampa removível, rodízios com freio. Capacidades de 25L a 1000L. 
+                  Fabricados em aço carbono ou inox. Garantia de 1 ano.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img 
+                src={hmCentralAlimentacao} 
+                alt="Central de Alimentação" 
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">Central de Alimentação</h3>
+                <p className="text-gray-600">
+                  Soluções completas e personalizadas para abastecimento de materiais plásticos granulados ou moídos. 
+                  Projeto 3D exclusivo, tecnologia de vácuo, painéis intuitivos, alarmes automáticos e limpeza de filtro. 
+                  Componentes 100% nacionais. Garantia de 1 ano.
+                </p>
               </div>
             </div>
           </div>
@@ -782,11 +879,12 @@ function App() {
             <div className="bg-white rounded-lg shadow-lg p-6">
               <h4 className="text-xl font-semibold text-gray-800 mb-4">Serviços Especializados</h4>
               <ul className="text-gray-600 space-y-2">
-                <li>• Manutenção Preventiva</li>
-                <li>• Instalação Completa</li>
+                <li>• Manutenção Preventiva e Corretiva</li>
+                <li>• Recondicionamento de Equipamentos</li>
+                <li>• Instalação e Comissionamento</li>
+                <li>• Serviços de Refrigeração Industrial</li>
                 <li>• Suporte Técnico 24h</li>
-                <li>• Treinamento de Operadores</li>
-                <li>• Consultoria Técnica</li>
+                <li>• Consultoria Técnica Especializada</li>
               </ul>
             </div>
 
@@ -884,6 +982,133 @@ function App() {
                 Empresas de diversos segmentos que confiam na qualidade e expertise da Dorathas
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Software */}
+      <section id="software" className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">Software Industrial</h2>
+            <p className="text-xl text-gray-600">Soluções em software para otimização de processos industriais</p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white rounded-lg shadow-lg p-8 text-center">
+              <div className="w-24 h-24 bg-cyan-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center">
+                  <span className="text-white font-bold text-xl">SW</span>
+                </div>
+              </div>
+              
+              <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+                Soluções em Software Industrial
+              </h3>
+              
+              <p className="text-gray-600 mb-6 text-lg">
+                Representamos empresas especializadas em desenvolvimento de software para automação e 
+                otimização de processos industriais. Soluções personalizadas para aumentar a eficiência 
+                e produtividade da sua operação.
+              </p>
+
+              <div className="grid md:grid-cols-3 gap-6 mb-8">
+                <div className="bg-cyan-50 p-6 rounded-lg">
+                  <h4 className="text-xl font-semibold text-cyan-800 mb-3">Automação</h4>
+                  <p className="text-cyan-700">Software para controle e automação de processos industriais</p>
+                </div>
+                <div className="bg-cyan-50 p-6 rounded-lg">
+                  <h4 className="text-xl font-semibold text-cyan-800 mb-3">Monitoramento</h4>
+                  <p className="text-cyan-700">Sistemas de monitoramento em tempo real da produção</p>
+                </div>
+                <div className="bg-cyan-50 p-6 rounded-lg">
+                  <h4 className="text-xl font-semibold text-cyan-800 mb-3">Gestão</h4>
+                  <p className="text-cyan-700">Ferramentas de gestão e controle de qualidade</p>
+                </div>
+              </div>
+
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <p className="text-gray-600 mb-4">
+                  <strong>Em breve:</strong> Informações detalhadas sobre nossas soluções em software industrial. 
+                  Entre em contato para saber mais sobre como podemos ajudar a otimizar seus processos.
+                </p>
+                <button 
+                  onClick={() => scrollToSection('contato')}
+                  className="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 px-8 rounded-lg transition-colors"
+                >
+                  Entre em Contato
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Blog */}
+      <section id="blog" className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">Blog</h2>
+            <p className="text-xl text-gray-600">Fique por dentro das novidades do setor industrial</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-gray-50 rounded-lg overflow-hidden shadow-lg">
+              <div className="w-full h-48 bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center">
+                <h3 className="text-white text-xl font-semibold">Inovações em Usinagem</h3>
+              </div>
+              <div className="p-6">
+                <h4 className="text-lg font-semibold text-gray-800 mb-2">Tecnologias CNC Avançadas</h4>
+                <p className="text-gray-600 mb-4">Descubra as últimas tendências em usinagem CNC e como elas podem revolucionar sua produção.</p>
+                <button 
+                  onClick={() => window.open('https://www.dorathas.com.br/blog/inovacoes-usinagem', '_blank')}
+                  className="text-blue-600 hover:text-blue-800 font-medium cursor-pointer"
+                >
+                  Leia mais →
+                </button>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 rounded-lg overflow-hidden shadow-lg">
+              <div className="w-full h-48 bg-gradient-to-r from-green-500 to-green-600 flex items-center justify-center">
+                <h3 className="text-white text-xl font-semibold">Sustentabilidade</h3>
+              </div>
+              <div className="p-6">
+                <h4 className="text-lg font-semibold text-gray-800 mb-2">Reciclagem de Plásticos</h4>
+                <p className="text-gray-600 mb-4">Como os moinhos fresa contribuem para uma produção mais sustentável e econômica.</p>
+                <button 
+                  onClick={() => window.open('https://www.dorathas.com.br/blog/sustentabilidade-plasticos', '_blank')}
+                  className="text-green-600 hover:text-green-800 font-medium cursor-pointer"
+                >
+                  Leia mais →
+                </button>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 rounded-lg overflow-hidden shadow-lg">
+              <div className="w-full h-48 bg-gradient-to-r from-purple-500 to-purple-600 flex items-center justify-center">
+                <h3 className="text-white text-xl font-semibold">Moldes de Precisão</h3>
+              </div>
+              <div className="p-6">
+                <h4 className="text-lg font-semibold text-gray-800 mb-2">Desenvolvimento de Moldes</h4>
+                <p className="text-gray-600 mb-4">Técnicas avançadas para desenvolvimento de moldes para termoplásticos e termofixos.</p>
+                <button 
+                  onClick={() => window.open('https://www.dorathas.com.br/blog/moldes-precisao', '_blank')}
+                  className="text-purple-600 hover:text-purple-800 font-medium cursor-pointer"
+                >
+                  Leia mais →
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <button 
+              onClick={() => window.open('https://www.dorathas.com.br/blog', '_blank')}
+              className="bg-gray-800 text-white px-8 py-3 rounded-lg hover:bg-gray-700 transition-colors cursor-pointer"
+            >
+              Ver Todos os Artigos
+            </button>
           </div>
         </div>
       </section>
