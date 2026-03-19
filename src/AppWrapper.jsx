@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import App from './App.jsx'
 import AppVibrante from './AppVibrante.jsx'
 
@@ -48,6 +49,9 @@ function AppWrapper() {
 
       {/* Renderiza a versão apropriada */}
       {theme === 'padrao' ? <App /> : <AppVibrante />}
+      
+      {/* Vercel Web Analytics */}
+      <Analytics />
     </div>
   )
 }
