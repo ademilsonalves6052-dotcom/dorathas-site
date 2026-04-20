@@ -30,7 +30,7 @@ import logo_novel_colorido from './assets/novel-logo.png'
 import logo_electrolux_colorido from './assets/logo_electrolux_novo.png'
 import logo_anauger_colorido from './assets/ebf-logo.png'
 import logo_plasticor_colorido from './assets/plasticor-logo.jpg'
-import logo_latina_colorido from './assets/metagal-logo.png'
+import logo_metagal_colorido from './assets/metagal-logo.png'
 import logo_isopower from './assets/isopower-logo.webp'
 
 // Import imagens ilustrativas
@@ -450,37 +450,63 @@ function AppVibrante() {
       {/* Software */}
       <section id="software" className="py-16" style={{backgroundColor: '#f0f8ff'}}>
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold mb-12 text-center" style={{color: '#003366'}}>Software Industrial</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center" style={{color: '#003366'}}>Software Industrial - MeasureTech</h2>
           
           <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8">
-            <h3 className="text-3xl font-bold mb-6 text-center" style={{color: '#005599'}}>Soluções em Software Industrial</h3>
+            <h3 className="text-3xl font-bold mb-6 text-center" style={{color: '#005599'}}>Apontamento Automático de Produção</h3>
             
             <p className="text-gray-600 mb-8 text-lg text-center">
-              Representamos empresas especializadas em desenvolvimento de software para automação e otimização de processos industriais. Soluções personalizadas para controle de apontamento de produção, gestão de recursos e monitoramento em tempo real.
+              Representamos a <strong>MeasureTech</strong>, especializada em soluções de software para automação e otimização de processos industriais. Nossa solução principal é o <strong>Apontamento Automático de Produção</strong> para injeção de peças plásticas, utilizando tablets para coleta de dados em tempo real.
             </p>
 
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <div className="bg-blue-50 p-6 rounded-lg text-center">
-                <h4 className="text-xl font-bold mb-3" style={{color: '#003366'}}>Automação</h4>
-                <p className="text-gray-600">Software para controle e automação de processos industriais</p>
+                <h4 className="text-xl font-bold mb-3" style={{color: '#003366'}}>Coleta em Tempo Real</h4>
+                <p className="text-gray-600">Tablets para apontamento automático de produção nas máquinas de injeção plástica</p>
               </div>
               <div className="bg-blue-50 p-6 rounded-lg text-center">
-                <h4 className="text-xl font-bold mb-3" style={{color: '#003366'}}>Monitoramento</h4>
-                <p className="text-gray-600">Sistemas de monitoramento em tempo real da produção</p>
+                <h4 className="text-xl font-bold mb-3" style={{color: '#003366'}}>Monitoramento Integrado</h4>
+                <p className="text-gray-600">Visibilidade total da produção com sincronização automática de dados</p>
               </div>
               <div className="bg-blue-50 p-6 rounded-lg text-center">
-                <h4 className="text-xl font-bold mb-3" style={{color: '#003366'}}>Gestão</h4>
-                <p className="text-gray-600">Ferramentas de gestão e controle de qualidade</p>
+                <h4 className="text-xl font-bold mb-3" style={{color: '#003366'}}>Gestão Eficiente</h4>
+                <p className="text-gray-600">Controle de qualidade e otimização de recursos em tempo real</p>
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-orange-100 to-orange-50 p-6 rounded-lg text-center">
-              <p className="text-gray-700 mb-4">
-                <strong>Funcionalidades principais:</strong> Apontamento de produção, Controle de qualidade em tempo real, Gestão de recursos, Visibilidade total da produção, Conformidade com normas ISO, Redução de custos operacionais.
-              </p>
-              <button onClick={() => scrollToSection('contato')} className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition">
-                Solicitar Demonstração
-              </button>
+            <div className="bg-gradient-to-r from-orange-100 to-orange-50 p-6 rounded-lg">
+              <h4 className="text-xl font-bold mb-4 text-center" style={{color: '#003366'}}>Funcionalidades Principais:</h4>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="flex items-start">
+                  <span className="text-lg mr-3" style={{color: '#FF6600'}}>✓</span>
+                  <span className="text-gray-700"><strong>Apontamento Automático:</strong> Coleta de dados sem intervenção manual</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-lg mr-3" style={{color: '#FF6600'}}>✓</span>
+                  <span className="text-gray-700"><strong>Controle de Qualidade:</strong> Verificação em tempo real de peças</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-lg mr-3" style={{color: '#FF6600'}}>✓</span>
+                  <span className="text-gray-700"><strong>Gestão de Recursos:</strong> Otimização de máquinas e operadores</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-lg mr-3" style={{color: '#FF6600'}}>✓</span>
+                  <span className="text-gray-700"><strong>Conformidade ISO:</strong> Rastreabilidade completa da produção</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-lg mr-3" style={{color: '#FF6600'}}>✓</span>
+                  <span className="text-gray-700"><strong>Redução de Custos:</strong> Eliminação de desperdícios e retrabalho</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-lg mr-3" style={{color: '#FF6600'}}>✓</span>
+                  <span className="text-gray-700"><strong>Visibilidade Total:</strong> Dashboard com métricas em tempo real</span>
+                </div>
+              </div>
+              <div className="text-center mt-6">
+                <button onClick={() => scrollToSection('contato')} className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition font-semibold">
+                  Solicitar Demonstração
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -540,7 +566,7 @@ function AppVibrante() {
             <img src={logo_fabercastel_colorido} alt="Faber Castel" className="h-20 object-contain" />
             <img src={logo_multilaser_colorido} alt="Multilaser" className="h-20 object-contain" />
             <img src={logo_plasticor_colorido} alt="Plasticor" className="h-20 object-contain" />
-            <img src={logo_latina_colorido} alt="Latina" className="h-20 object-contain" />
+            <img src={logo_metagal_colorido} alt="Metagal" className="h-20 object-contain" />
             <img src={logo_anauger_colorido} alt="Anauger" className="h-20 object-contain" />
           </div>
 
