@@ -39,6 +39,9 @@ import moldeInjecao2 from './assets/molde_injecao_ilustrativo_2.jpg'
 import moldeInjecao3 from './assets/molde_injecao_ilustrativo_3.png'
 import pecasUsinadas1 from './assets/pecas_usinadas_ilustrativo_1.jpg'
 import pecasUsinadas2 from './assets/pecas_usinadas_ilustrativo_2.jpg'
+import pecasUsinadasLatao from './assets/pecas_usinadas_latao.jpg'
+import pecasUsinadasAco from './assets/pecas_usinadas_aco.jpg'
+import maquinaCncUsinando from './assets/maquina_cnc_usinando.png'
 
 /**
  * AppVibrante - Versão alternativa com cores do site antigo e conteúdo completo
@@ -362,9 +365,9 @@ function AppVibrante() {
 
             <div className="grid grid-cols-2 gap-4">
               <img src={dorathasTornoAutomatico} alt="Torno Automático" className="w-full h-64 object-cover rounded-lg shadow-lg" />
-              <img src={dorathasCentroUsinagem} alt="Centro Usinagem" className="w-full h-64 object-cover rounded-lg shadow-lg" />
-              <img src={pecasUsinadas1} alt="Peças Usinadas 1" className="w-full h-64 object-cover rounded-lg shadow-lg" />
-              <img src={pecasUsinadas2} alt="Peças Usinadas 2" className="w-full h-64 object-cover rounded-lg shadow-lg" />
+              <img src={pecasUsinadasLatao} alt="Peças Usinadas - Latão" className="w-full h-64 object-cover rounded-lg shadow-lg" />
+              <img src={pecasUsinadasAco} alt="Peças Usinadas - Aço" className="w-full h-64 object-cover rounded-lg shadow-lg" />
+              <img src={maquinaCncUsinando} alt="Máquina CNC Usinando" className="w-full h-64 object-cover rounded-lg shadow-lg" />
             </div>
           </div>
         </div>
