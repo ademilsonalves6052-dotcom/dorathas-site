@@ -391,7 +391,7 @@ function AppVibrante() {
               <img src={hmSecagem} alt="Secagem" className="w-full h-48 object-cover" />
               <div className="p-4">
                 <h4 className="font-bold text-lg mb-2" style={{color: '#003366'}}>Sistemas de Secagem</h4>
-                <p className="text-gray-600 text-sm">Secagem de última geração para termoplásticos e termofixos.</p>
+                <p className="text-gray-600 text-sm">Secagem de última geração para termoplásticos.</p>
               </div>
             </div>
 
