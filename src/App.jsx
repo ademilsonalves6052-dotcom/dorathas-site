@@ -55,6 +55,8 @@ import pecasUsinadas2 from './assets/pecas_usinadas_ilustrativo_2.jpg';
 function App() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' })
+  const [formSubmitted, setFormSubmitted] = useState(false)
 
   const slides = [
     {
@@ -105,6 +107,14 @@ function App() {
 
   const openFacebook = () => {
     window.open('https://www.facebook.com/dorathascom/', '_blank')
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const text = `Olá! Meu nome é ${formData.name || 'visitante do site'}.${formData.phone ? ` Meu telefone: ${formData.phone}.` : ''}${formData.email ? ` E-mail: ${formData.email}.` : ''} ${formData.message || 'Gostaria de saber mais sobre os serviços da Dorathas.'}`
+    window.open(`https://wa.me/5519993914471?text=${encodeURIComponent(text)}`, '_blank')
+    setFormSubmitted(true)
+    setFormData({ name: '', email: '', phone: '', message: '' })
   }
 
   const nextSlide = () => {
@@ -1067,12 +1077,12 @@ function App() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gray-50 rounded-lg overflow-hidden shadow-lg">
               <div className="w-full h-48 bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center">
-                <h3 className="text-white text-xl font-semibold">Otimização de Processos</h3>
+                <h3 className="text-white text-xl font-semibold">Usinagem CNC</h3>
               </div>
               <div className="p-6">
-                <h4 className="text-lg font-semibold text-gray-800 mb-2">Software de Apontamento de Produção</h4>
-                <p className="text-gray-600 mb-4">Como o software de apontamento pode reduzir desperdícios e aumentar a produtividade em 40%.</p>
-                <button 
+                <h4 className="text-lg font-semibold text-gray-800 mb-2">Inovações em Usinagem CNC</h4>
+                <p className="text-gray-600 mb-4">Como centros de usinagem verticais modernos transformam a produção industrial com precisão micrométrica e alta produtividade.</p>
+                <button
                   onClick={() => scrollToSection('blog-article-software')}
                   className="text-blue-600 hover:text-blue-800 font-medium cursor-pointer"
                 >
@@ -1083,12 +1093,12 @@ function App() {
 
             <div className="bg-gray-50 rounded-lg overflow-hidden shadow-lg">
               <div className="w-full h-48 bg-gradient-to-r from-green-500 to-green-600 flex items-center justify-center">
-                <h3 className="text-white text-xl font-semibold">Controle de Qualidade</h3>
+                <h3 className="text-white text-xl font-semibold">Sustentabilidade</h3>
               </div>
               <div className="p-6">
-                <h4 className="text-lg font-semibold text-gray-800 mb-2">Transformação Digital em Tempo Real</h4>
-                <p className="text-gray-600 mb-4">Tecnologia de monitoramento em tempo real para redução de defeitos e conformidade ISO.</p>
-                <button 
+                <h4 className="text-lg font-semibold text-gray-800 mb-2">Sustentabilidade na Indústria de Plásticos</h4>
+                <p className="text-gray-600 mb-4">Como o Moinho de Fresa transforma resíduos plásticos em matéria-prima reutilizável, gerando economia e sustentabilidade.</p>
+                <button
                   onClick={() => scrollToSection('blog-article-qualidade')}
                   className="text-green-600 hover:text-green-800 font-medium cursor-pointer"
                 >
@@ -1099,12 +1109,12 @@ function App() {
 
             <div className="bg-gray-50 rounded-lg overflow-hidden shadow-lg">
               <div className="w-full h-48 bg-gradient-to-r from-purple-500 to-purple-600 flex items-center justify-center">
-                <h3 className="text-white text-xl font-semibold">Gestão de Recursos</h3>
+                <h3 className="text-white text-xl font-semibold">Desenvolvimento de Moldes</h3>
               </div>
               <div className="p-6">
-                <h4 className="text-lg font-semibold text-gray-800 mb-2">Do Papel para o Digital</h4>
-                <p className="text-gray-600 mb-4">Integração de sistemas para visibilidade total e otimização de recursos na Indústria 4.0.</p>
-                <button 
+                <h4 className="text-lg font-semibold text-gray-800 mb-2">Moldes de Precisão: Base da Qualidade em Injeção</h4>
+                <p className="text-gray-600 mb-4">Como moldes bem projetados garantem qualidade, eficiência e menor índice de refugo no processo de injeção.</p>
+                <button
                   onClick={() => scrollToSection('blog-article-gestao')}
                   className="text-purple-600 hover:text-purple-800 font-medium cursor-pointer"
                 >
@@ -1351,46 +1361,67 @@ function App() {
 
             <div className="bg-gray-800 p-8 rounded-lg">
               <h3 className="text-2xl font-semibold mb-6">Envie uma Mensagem</h3>
-              <form className="space-y-6">
-                <div>
-                  <label className="block text-sm font-medium mb-2">Nome</label>
-                  <input 
-                    type="text" 
-                    className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent text-white"
-                    placeholder="Seu nome completo"
-                  />
+              {formSubmitted ? (
+                <div className="text-center py-8">
+                  <p className="text-green-400 text-xl font-semibold mb-2">Mensagem enviada!</p>
+                  <p className="text-gray-400 mb-6">Você foi redirecionado para o WhatsApp. Em breve entraremos em contato.</p>
+                  <button
+                    onClick={() => setFormSubmitted(false)}
+                    className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded-lg transition-colors"
+                  >
+                    Enviar outra mensagem
+                  </button>
                 </div>
-                <div>
-                  <label className="block text-sm font-medium mb-2">E-mail</label>
-                  <input 
-                    type="email" 
-                    className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent text-white"
-                    placeholder="seu@email.com"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium mb-2">Telefone</label>
-                  <input 
-                    type="tel" 
-                    className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent text-white"
-                    placeholder="(19) 99999-9999"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium mb-2">Mensagem</label>
-                  <textarea 
-                    rows="4" 
-                    className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent text-white"
-                    placeholder="Descreva sua necessidade..."
-                  ></textarea>
-                </div>
-                <button 
-                  type="submit" 
-                  className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
-                >
-                  Enviar Mensagem
-                </button>
-              </form>
+              ) : (
+                <form className="space-y-6" onSubmit={handleSubmit}>
+                  <div>
+                    <label className="block text-sm font-medium mb-2">Nome</label>
+                    <input
+                      type="text"
+                      value={formData.name}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent text-white"
+                      placeholder="Seu nome completo"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium mb-2">E-mail</label>
+                    <input
+                      type="email"
+                      value={formData.email}
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent text-white"
+                      placeholder="seu@email.com"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium mb-2">Telefone</label>
+                    <input
+                      type="tel"
+                      value={formData.phone}
+                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                      className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent text-white"
+                      placeholder="(19) 99999-9999"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium mb-2">Mensagem</label>
+                    <textarea
+                      rows="4"
+                      value={formData.message}
+                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                      className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent text-white"
+                      placeholder="Descreva sua necessidade..."
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
+                  >
+                    Enviar pelo WhatsApp
+                  </button>
+                </form>
+              )}
             </div>
           </div>
         </div>
@@ -1406,7 +1437,8 @@ function App() {
       {/* WhatsApp Button */}
       <button
         onClick={openWhatsApp}
-        className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-colors z-50"
+        className="fixed bottom-20 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-colors z-50"
+        title="WhatsApp"
       >
         <Phone className="w-6 h-6" />
       </button>

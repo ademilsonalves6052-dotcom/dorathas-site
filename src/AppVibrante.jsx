@@ -523,37 +523,132 @@ function AppVibrante() {
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
               <div className="h-48 bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center">
-                <h3 className="text-white text-xl font-bold text-center px-4">Otimização de Processos</h3>
+                <h3 className="text-white text-xl font-bold text-center px-4">Usinagem CNC</h3>
               </div>
               <div className="p-6">
-                <h4 className="text-lg font-bold mb-2" style={{color: '#003366'}}>Software de Apontamento de Produção</h4>
-                <p className="text-gray-600 mb-4">Como o software de apontamento pode reduzir desperdícios e aumentar a produtividade em 40%.</p>
-                <button className="text-blue-600 hover:text-blue-800 font-medium">Leia mais →</button>
+                <h4 className="text-lg font-bold mb-2" style={{color: '#003366'}}>Inovações em Usinagem CNC</h4>
+                <p className="text-gray-600 mb-4">Como centros de usinagem verticais modernos transformam a produção industrial com precisão micrométrica e alta produtividade.</p>
+                <button onClick={() => scrollToSection('blog-article-cnc')} className="text-blue-600 hover:text-blue-800 font-medium cursor-pointer">Leia mais →</button>
               </div>
             </div>
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
               <div className="h-48 bg-gradient-to-r from-green-500 to-green-600 flex items-center justify-center">
-                <h3 className="text-white text-xl font-bold text-center px-4">Controle de Qualidade</h3>
+                <h3 className="text-white text-xl font-bold text-center px-4">Sustentabilidade</h3>
               </div>
               <div className="p-6">
-                <h4 className="text-lg font-bold mb-2" style={{color: '#003366'}}>Transformação Digital em Tempo Real</h4>
-                <p className="text-gray-600 mb-4">Tecnologia de monitoramento em tempo real para redução de defeitos e conformidade ISO.</p>
-                <button className="text-green-600 hover:text-green-800 font-medium">Leia mais →</button>
+                <h4 className="text-lg font-bold mb-2" style={{color: '#003366'}}>Sustentabilidade na Indústria de Plásticos</h4>
+                <p className="text-gray-600 mb-4">Como o Moinho de Fresa transforma resíduos plásticos em matéria-prima reutilizável, gerando economia e sustentabilidade.</p>
+                <button onClick={() => scrollToSection('blog-article-sustentabilidade')} className="text-green-600 hover:text-green-800 font-medium cursor-pointer">Leia mais →</button>
               </div>
             </div>
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
               <div className="h-48 bg-gradient-to-r from-purple-500 to-purple-600 flex items-center justify-center">
-                <h3 className="text-white text-xl font-bold text-center px-4">Gestão de Recursos</h3>
+                <h3 className="text-white text-xl font-bold text-center px-4">Desenvolvimento de Moldes</h3>
               </div>
               <div className="p-6">
-                <h4 className="text-lg font-bold mb-2" style={{color: '#003366'}}>Do Papel para o Digital</h4>
-                <p className="text-gray-600 mb-4">Integração de sistemas para visibilidade total e otimização de recursos na Indústria 4.0.</p>
-                <button className="text-purple-600 hover:text-purple-800 font-medium">Leia mais →</button>
+                <h4 className="text-lg font-bold mb-2" style={{color: '#003366'}}>Moldes de Precisão: Base da Qualidade em Injeção</h4>
+                <p className="text-gray-600 mb-4">Como moldes bem projetados garantem qualidade, eficiência e menor índice de refugo no processo de injeção.</p>
+                <button onClick={() => scrollToSection('blog-article-moldes')} className="text-purple-600 hover:text-purple-800 font-medium cursor-pointer">Leia mais →</button>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Artigos do Blog */}
+      <section id="blog-article-cnc" className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <button onClick={() => scrollToSection('blog')} className="text-blue-600 hover:text-blue-800 font-medium mb-6 cursor-pointer">
+            ← Voltar ao Blog
+          </button>
+          <article className="bg-white rounded-lg shadow-lg p-8">
+            <div className="mb-6">
+              <h1 className="text-4xl font-bold mb-4" style={{color: '#003366'}}>Inovações em Usinagem CNC: Transformando a Produção Industrial</h1>
+              <div className="flex flex-wrap gap-4 text-gray-600 text-sm">
+                <span>📅 29 de Outubro de 2024</span>
+                <span>✍️ Dorathas</span>
+                <span>📚 Usinagem</span>
+                <span>⏱️ 5 min de leitura</span>
+              </div>
+            </div>
+            <div className="text-gray-700 leading-relaxed space-y-4">
+              <h2 className="text-2xl font-bold mt-8 mb-4" style={{color: '#003366'}}>A Evolução da Tecnologia CNC</h2>
+              <p>Os centros de usinagem vertical modernos oferecem capacidades que eram impensáveis há uma década. Com cursos de até 1000mm e capacidade de usinar peças de até 800kg, esses equipamentos permitem a produção de componentes complexos com tolerâncias extremamente apertadas.</p>
+              <p>A integração de sistemas de controle avançados, como softwares CAM de última geração, permite que os operadores programem peças complexas com precisão micrométrica, resultando em redução de desperdício e aumento de produtividade.</p>
+              <h2 className="text-2xl font-bold mt-8 mb-4" style={{color: '#003366'}}>Aplicações Práticas</h2>
+              <p>Em setores como automotivo, aeronáutico e médico, a usinagem CNC é fundamental. Peças críticas para motores, componentes de aviões e implantes médicos exigem precisão absoluta.</p>
+              <h2 className="text-2xl font-bold mt-8 mb-4" style={{color: '#003366'}}>Tendências Futuras</h2>
+              <ul className="list-disc list-inside space-y-2">
+                <li><strong>Automação Inteligente:</strong> Sistemas que aprendem e se adaptam durante a produção</li>
+                <li><strong>IoT Industrial:</strong> Monitoramento em tempo real de máquinas e processos</li>
+                <li><strong>Sustentabilidade:</strong> Redução de consumo de energia e otimização de recursos</li>
+                <li><strong>Manufatura Aditiva Híbrida:</strong> Combinação de usinagem com impressão 3D</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="blog-article-sustentabilidade" className="py-16 bg-white">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <button onClick={() => scrollToSection('blog')} className="text-green-600 hover:text-green-800 font-medium mb-6 cursor-pointer">
+            ← Voltar ao Blog
+          </button>
+          <article className="bg-gray-50 rounded-lg shadow-lg p-8">
+            <div className="mb-6">
+              <h1 className="text-4xl font-bold mb-4" style={{color: '#003366'}}>Sustentabilidade na Indústria de Plásticos: O Papel do Moinho de Fresa</h1>
+              <div className="flex flex-wrap gap-4 text-gray-600 text-sm">
+                <span>📅 22 de Outubro de 2024</span>
+                <span>✍️ Dorathas</span>
+                <span>📚 Sustentabilidade</span>
+                <span>⏱️ 6 min de leitura</span>
+              </div>
+            </div>
+            <div className="text-gray-700 leading-relaxed space-y-4">
+              <h2 className="text-2xl font-bold mt-8 mb-4" style={{color: '#003366'}}>O Desafio do Desperdício de Plástico</h2>
+              <p>A indústria de plásticos gera uma quantidade significativa de resíduos durante o processo de produção. Rebarbas, peças defeituosas e sobras de material representam perda financeira e impacto ambiental considerável.</p>
+              <h2 className="text-2xl font-bold mt-8 mb-4" style={{color: '#003366'}}>Como Funciona o Moinho de Fresa</h2>
+              <p>O moinho de fresa tritura materiais plásticos, transformando-os em partículas uniformes que podem ser:</p>
+              <ol className="list-decimal list-inside space-y-2">
+                <li><strong>Reaproveitadas internamente:</strong> Misturadas com material virgem para reduzir custos</li>
+                <li><strong>Vendidas como matéria-prima:</strong> Oferecidas para outras indústrias</li>
+                <li><strong>Processadas em novos produtos:</strong> Transformadas via injeção ou extrusão</li>
+              </ol>
+              <h2 className="text-2xl font-bold mt-8 mb-4" style={{color: '#003366'}}>Benefícios Econômicos e Ambientais</h2>
+              <p>Empresas que implementaram sistemas com moinho de fresa relatam redução de 40-60% no consumo de material virgem, economia significativa em custos operacionais e melhoria na imagem corporativa.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="blog-article-moldes" className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <button onClick={() => scrollToSection('blog')} className="text-purple-600 hover:text-purple-800 font-medium mb-6 cursor-pointer">
+            ← Voltar ao Blog
+          </button>
+          <article className="bg-white rounded-lg shadow-lg p-8">
+            <div className="mb-6">
+              <h1 className="text-4xl font-bold mb-4" style={{color: '#003366'}}>Desenvolvimento de Moldes de Precisão: A Base da Qualidade em Injeção</h1>
+              <div className="flex flex-wrap gap-4 text-gray-600 text-sm">
+                <span>📅 15 de Outubro de 2024</span>
+                <span>✍️ Dorathas</span>
+                <span>📚 Moldes</span>
+                <span>⏱️ 8 min de leitura</span>
+              </div>
+            </div>
+            <div className="text-gray-700 leading-relaxed space-y-4">
+              <h2 className="text-2xl font-bold mt-8 mb-4" style={{color: '#003366'}}>A Importância do Molde na Injeção</h2>
+              <p>O molde é o "coração" do processo de injeção. É ele que define a forma final do produto, as tolerâncias dimensionais, a qualidade superficial e a consistência entre peças.</p>
+              <h2 className="text-2xl font-bold mt-8 mb-4" style={{color: '#003366'}}>Tipos de Moldes Especializados</h2>
+              <p><strong>Moldes para Termoplásticos:</strong> Permitem resfriamento rápido e uniforme, suportam pressões de injeção elevadas e têm superfícies de alta qualidade.</p>
+              <p><strong>Moldes para Injeção de Alumínio:</strong> Fabricados em aço de alta qualidade com sistemas de refrigeração sofisticados e resistência a altas temperaturas.</p>
+              <p><strong>Moldes para Termofixos:</strong> Com sistemas de aquecimento, resistência a temperaturas elevadas e precisão para compactação uniforme.</p>
+              <h2 className="text-2xl font-bold mt-8 mb-4" style={{color: '#003366'}}>Investimento em Qualidade</h2>
+              <p>Um molde de qualidade se paga rapidamente através de redução de refugo, aumento de produtividade, melhoria na qualidade do produto e maior vida útil com menor necessidade de manutenção.</p>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -672,13 +767,13 @@ function AppVibrante() {
         </div>
       </footer>
 
-      {/* Botão flutuante para alternar tema */}
+      {/* WhatsApp Button */}
       <button
-        onClick={() => window.location.reload()}
-        className="fixed bottom-6 right-6 bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-blue-700 transition"
-        title="Voltar para versão padrão"
+        onClick={openWhatsApp}
+        className="fixed bottom-20 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition z-50"
+        title="WhatsApp"
       >
-        ← Versão Padrão
+        <Phone size={24} />
       </button>
     </div>
   )
