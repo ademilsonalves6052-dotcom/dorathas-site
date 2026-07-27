@@ -178,14 +178,20 @@ function App() {
               >
                 Equipamentos
               </button>
-              <button 
-                onClick={() => scrollToSection('software')} 
+              <button
+                onClick={() => scrollToSection('software')}
                 className="px-4 py-2 bg-cyan-500 text-white rounded-lg hover:bg-cyan-600 transition-colors text-sm font-medium"
               >
                 Software
               </button>
-              <button 
-                onClick={() => scrollToSection('blog')} 
+              <button
+                onClick={() => scrollToSection('cases')}
+                className="px-4 py-2 bg-amber-500 text-white rounded-lg hover:bg-amber-600 transition-colors text-sm font-medium"
+              >
+                Cases
+              </button>
+              <button
+                onClick={() => scrollToSection('blog')}
                 className="px-4 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors text-sm font-medium"
               >
                 Blog
@@ -259,14 +265,20 @@ function App() {
                 >
                   Equipamentos
                 </button>
-                <button 
-                  onClick={() => scrollToSection('software')} 
+                <button
+                  onClick={() => scrollToSection('software')}
                   className="px-4 py-2 bg-cyan-500 text-white rounded-lg hover:bg-cyan-600 transition-colors text-sm font-medium text-left"
                 >
                   Software
                 </button>
-                <button 
-                  onClick={() => scrollToSection('blog')} 
+                <button
+                  onClick={() => scrollToSection('cases')}
+                  className="px-4 py-2 bg-amber-500 text-white rounded-lg hover:bg-amber-600 transition-colors text-sm font-medium text-left"
+                >
+                  Cases
+                </button>
+                <button
+                  onClick={() => scrollToSection('blog')}
                   className="px-4 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors text-sm font-medium text-left"
                 >
                   Blog

@@ -103,6 +103,7 @@ function AppVibrante() {
             <button onClick={() => scrollToSection('usinagem')} className="text-gray-700 hover:text-blue-600 font-medium">Usinagem</button>
             <button onClick={() => scrollToSection('equipamentos')} className="text-gray-700 hover:text-blue-600 font-medium">Equipamentos</button>
             <button onClick={() => scrollToSection('software')} className="text-gray-700 hover:text-blue-600 font-medium">Software</button>
+            <button onClick={() => scrollToSection('cases')} className="text-gray-700 hover:text-blue-600 font-medium">Cases</button>
             <button onClick={() => scrollToSection('blog')} className="text-gray-700 hover:text-blue-600 font-medium">Blog</button>
             <button onClick={() => scrollToSection('contato')} className="text-gray-700 hover:text-blue-600 font-medium">Contato</button>
           </nav>
@@ -121,6 +122,7 @@ function AppVibrante() {
             <button onClick={() => scrollToSection('usinagem')} className="block w-full text-left p-2 hover:bg-gray-200">Usinagem</button>
             <button onClick={() => scrollToSection('equipamentos')} className="block w-full text-left p-2 hover:bg-gray-200">Equipamentos</button>
             <button onClick={() => scrollToSection('software')} className="block w-full text-left p-2 hover:bg-gray-200">Software</button>
+            <button onClick={() => scrollToSection('cases')} className="block w-full text-left p-2 hover:bg-gray-200">Cases</button>
             <button onClick={() => scrollToSection('blog')} className="block w-full text-left p-2 hover:bg-gray-200">Blog</button>
             <button onClick={() => scrollToSection('contato')} className="block w-full text-left p-2 hover:bg-gray-200">Contato</button>
           </nav>
@@ -653,7 +655,7 @@ function AppVibrante() {
       </section>
 
       {/* Cases de Sucesso */}
-      <section className="py-16" style={{backgroundColor: '#f9f9f9'}}>
+      <section id="cases" className="py-16" style={{backgroundColor: '#f9f9f9'}}>
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold mb-12 text-center" style={{color: '#003366'}}>Cases de Sucesso</h2>
           
