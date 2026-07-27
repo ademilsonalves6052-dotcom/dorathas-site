@@ -174,12 +174,68 @@ function AppVibrante() {
         </button>
       </section>
 
+      {/* Chamada Principal */}
+      <section className="py-16 bg-white border-b border-gray-100">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <p className="text-xs font-bold tracking-widest uppercase mb-5" style={{color: '#FF6600'}}>Representação Técnica Industrial · Interior Paulista</p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight max-w-3xl" style={{color: '#003366'}}>
+            Conectamos fornecedores do interior paulista às indústrias de todo o Brasil.
+          </h2>
+          <p className="text-lg text-gray-600 mb-8 max-w-3xl leading-relaxed">
+            A <strong>Dorathas</strong> é representante comercial técnico com <strong>+15 anos de mercado</strong>, especializada em levar as soluções de <strong>fabricantes do interior de São Paulo</strong> — injeção plástica, moldes, usinagem CNC, periféricos e tecnologia industrial — a empresas e indústrias em todo o <strong>estado de São Paulo e no Brasil</strong>.
+          </p>
+          <div className="flex flex-wrap gap-4 mb-3">
+            <button
+              onClick={() => scrollToSection('contato')}
+              className="px-8 py-3 text-white font-bold rounded-lg transition-colors"
+              style={{backgroundColor: '#FF6600'}}
+              onMouseOver={e => e.currentTarget.style.backgroundColor='#cc5200'}
+              onMouseOut={e => e.currentTarget.style.backgroundColor='#FF6600'}
+            >
+              Enviar Projeto para Cotação
+            </button>
+            <button
+              onClick={openWhatsApp}
+              className="px-8 py-3 border-2 font-bold rounded-lg transition-colors hover:text-white"
+              style={{borderColor: '#003366', color: '#003366'}}
+              onMouseOver={e => { e.currentTarget.style.backgroundColor='#003366'; e.currentTarget.style.color='white' }}
+              onMouseOut={e => { e.currentTarget.style.backgroundColor='transparent'; e.currentTarget.style.color='#003366' }}
+            >
+              Falar com Especialista Técnico
+            </button>
+          </div>
+          <p className="text-sm text-gray-400 mb-12">Atendimento técnico para engenharia, compras e produção</p>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center border-t border-gray-100 pt-10">
+            <div>
+              <p className="text-4xl font-bold" style={{color: '#FF6600'}}>+15</p>
+              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mt-2">Anos de Mercado</p>
+            </div>
+            <div>
+              <p className="text-4xl font-bold" style={{color: '#FF6600'}}>200+</p>
+              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mt-2">Clientes Atendidos</p>
+            </div>
+            <div>
+              <p className="text-4xl font-bold" style={{color: '#FF6600'}}>500+</p>
+              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mt-2">Projetos Realizados</p>
+            </div>
+            <div>
+              <p className="text-4xl font-bold" style={{color: '#FF6600'}}>8+</p>
+              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mt-2">Estados Atendidos</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Quem Somos */}
       <section id="quem-somos" style={{backgroundColor: '#f9f9f9', padding: '60px 20px'}}>
         <div style={{maxWidth: '1200px', margin: '0 auto'}}>
-          <h2 style={{fontFamily: "'Montserrat', sans-serif", fontSize: '36px', color: '#003366', marginBottom: '20px'}}>Quem Somos</h2>
+          <h2 style={{fontFamily: "'Montserrat', sans-serif", fontSize: '36px', color: '#003366', marginBottom: '20px'}}>+15 Anos Conectando o Interior Paulista ao Mercado Nacional</h2>
           <p style={{fontSize: '18px', color: '#333', lineHeight: '1.6'}}>
-            A <strong>Dorathas</strong> é uma representante comercial especializada em serviços industriais e equipamentos periféricos. Com mais de <strong>15 anos de experiência</strong>, conectamos empresas às melhores soluções do mercado, oferecendo <strong>consultoria técnica e comercial</strong> para diversos segmentos da indústria.
+            A <strong>Dorathas Consultoria e Representações Industriais</strong> é especializada em representação comercial técnica, com sede em <strong>Limeira–SP</strong>. Nosso propósito é ser o elo estratégico entre <strong>fabricantes e fornecedores do interior paulista</strong> e as <strong>indústrias de todo o estado de São Paulo e do Brasil</strong>.
+          </p>
+          <p style={{fontSize: '18px', color: '#333', lineHeight: '1.6', marginTop: '16px'}}>
+            Com mais de <strong>15 anos de mercado</strong>, atuamos em seis frentes industriais — injeção de termoplásticos, termofixos, ferramentaria e moldes, usinagem CNC, equipamentos periféricos e tecnologia (MeasureTech 4.0) — sempre com atendimento técnico personalizado para engenharia, compras e produção.
           </p>
 
           <h3 style={{fontSize: '28px', color: '#003366', marginTop: '40px'}}>O Que Fazemos</h3>
@@ -220,7 +276,9 @@ function AppVibrante() {
       {/* Termoplásticos */}
       <section id="termoplasticos" className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold mb-12 text-center" style={{color: '#003366'}}>Injeção de Termoplásticos</h2>
+          <p className="text-xs font-bold tracking-widest uppercase text-center mb-3" style={{color: '#FF6600'}}>Representação Técnica · Interior Paulista</p>
+          <h2 className="text-4xl font-bold mb-4 text-center" style={{color: '#003366'}}>Injeção de Termoplásticos</h2>
+          <p className="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-12">Representamos <strong>fabricantes especializados do interior de São Paulo</strong> em injeção de termoplásticos com PP, PE, ABS, Nylon, PC, POM, PBT e PET — levando soluções técnicas de precisão a indústrias em todo o Brasil.</p>
           
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div className="grid grid-cols-2 gap-4">
@@ -267,7 +325,8 @@ function AppVibrante() {
       {/* Termofixos */}
       <section id="termofixos" className="py-16" style={{backgroundColor: '#f0f8ff'}}>
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold mb-12 text-center" style={{color: '#003366'}}>Moldagem por Compactação de Termofixos</h2>
+          <h2 className="text-4xl font-bold mb-4 text-center" style={{color: '#003366'}}>Termofixos (Baquelite, BMC, Melamina)</h2>
+          <p className="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-12">Conectamos <strong>empresas do interior paulista</strong> especializadas em moldagem por compressão de termofixos — Baquelite, BMC e Melamina — com indústrias que exigem alta resistência térmica e dielétrica em todo o Brasil.</p>
           
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
@@ -302,7 +361,8 @@ function AppVibrante() {
       {/* Moldes */}
       <section id="moldes" className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold mb-12 text-center" style={{color: '#003366'}}>Desenvolvimento de Moldes</h2>
+          <h2 className="text-4xl font-bold mb-4 text-center" style={{color: '#003366'}}>Ferramentaria e Moldes</h2>
+          <p className="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-12">Representamos <strong>ferramentarias de precisão do interior paulista</strong> na fabricação e manutenção de moldes para injeção e compressão, atendendo projetos em todo o estado de São Paulo e demais regiões do Brasil.</p>
           
           <div className="grid lg:grid-cols-2 gap-8 items-center mb-16">
             <div className="grid grid-cols-2 gap-4">
@@ -344,7 +404,8 @@ function AppVibrante() {
       {/* Usinagem */}
       <section id="usinagem" className="py-16" style={{backgroundColor: '#f0f8ff'}}>
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold mb-12 text-center" style={{color: '#003366'}}>Usinagem de Precisão</h2>
+          <h2 className="text-4xl font-bold mb-4 text-center" style={{color: '#003366'}}>Usinagem CNC</h2>
+          <p className="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-12">Levamos a capacidade de <strong>fornecedores de usinagem seriada do interior de SP</strong> — tornos CNC e centros automáticos — a indústrias de médio e grande porte em todo o Brasil que buscam precisão, prazo e escala.</p>
           
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
@@ -386,7 +447,8 @@ function AppVibrante() {
       {/* Equipamentos */}
       <section id="equipamentos" className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold mb-12 text-center" style={{color: '#003366'}}>Equipamentos Periféricos</h2>
+          <h2 className="text-4xl font-bold mb-4 text-center" style={{color: '#003366'}}>Equipamentos Periféricos</h2>
+          <p className="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-12">Representamos <strong>fabricantes do interior paulista</strong> em alimentadores, dosadores, moinhos, esteiras, secadores e centrais de alimentação — equipamentos essenciais para linhas de injeção e extrusão em todo o Brasil.</p>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
@@ -463,7 +525,8 @@ function AppVibrante() {
       {/* Software */}
       <section id="software" className="py-16" style={{backgroundColor: '#f0f8ff'}}>
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold mb-12 text-center" style={{color: '#003366'}}>Software Industrial - MeasureTech</h2>
+          <h2 className="text-4xl font-bold mb-4 text-center" style={{color: '#003366'}}>Software MeasureTech 4.0</h2>
+          <p className="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-12">Como <strong>representante autorizado do MeasureTech 4.0</strong> para o interior de São Paulo e demais regiões, a Dorathas leva tecnologia de gestão e apontamento de produção em tempo real a indústrias que buscam eficiência operacional — sem depender de grandes centros.</p>
           
           <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8">
             <h3 className="text-3xl font-bold mb-6 text-center" style={{color: '#005599'}}>Apontamento Automático de Produção</h3>

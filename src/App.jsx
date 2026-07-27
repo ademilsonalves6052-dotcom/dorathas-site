@@ -327,12 +327,62 @@ function App() {
         {/* Slide Indicators - Removed, using arrows instead */}
       </section>
 
+      {/* Chamada Principal */}
+      <section className="py-16 bg-white border-b border-gray-100">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <p className="text-xs font-bold tracking-widest text-orange-500 uppercase mb-5">Representação Técnica Industrial · Interior Paulista</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 leading-tight max-w-3xl">
+            Conectamos fornecedores do interior paulista às indústrias de todo o Brasil.
+          </h2>
+          <p className="text-lg text-gray-600 mb-8 max-w-3xl leading-relaxed">
+            A <strong>Dorathas</strong> é representante comercial técnico com <strong>+15 anos de mercado</strong>, especializada em levar as soluções de <strong>fabricantes do interior de São Paulo</strong> — injeção plástica, moldes, usinagem CNC, periféricos e tecnologia industrial — a empresas e indústrias em todo o <strong>estado de São Paulo e no Brasil</strong>.
+          </p>
+          <div className="flex flex-wrap gap-4 mb-3">
+            <button
+              onClick={() => scrollToSection('contato')}
+              className="px-8 py-3 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-lg transition-colors"
+            >
+              Enviar Projeto para Cotação
+            </button>
+            <button
+              onClick={openWhatsApp}
+              className="px-8 py-3 border-2 border-gray-800 hover:bg-gray-800 hover:text-white text-gray-800 font-bold rounded-lg transition-colors"
+            >
+              Falar com Especialista Técnico
+            </button>
+          </div>
+          <p className="text-sm text-gray-400 mb-12">Atendimento técnico para engenharia, compras e produção</p>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center border-t border-gray-100 pt-10">
+            <div>
+              <p className="text-4xl font-bold text-orange-500">+15</p>
+              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mt-2">Anos de Mercado</p>
+            </div>
+            <div>
+              <p className="text-4xl font-bold text-orange-500">200+</p>
+              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mt-2">Clientes Atendidos</p>
+            </div>
+            <div>
+              <p className="text-4xl font-bold text-orange-500">500+</p>
+              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mt-2">Projetos Realizados</p>
+            </div>
+            <div>
+              <p className="text-4xl font-bold text-orange-500">8+</p>
+              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mt-2">Estados Atendidos</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Quem Somos */}
       <section id="quem-somos" style={{fontFamily: "'Lato', sans-serif", padding: "60px 20px", backgroundColor: "#f9f9f9"}}>
         <div style={{maxWidth: "1200px", margin: "0 auto"}}>
-          <h2 style={{fontFamily: "'Montserrat', sans-serif", fontSize: "36px", color: "#003366", marginBottom: "20px"}}>Quem Somos</h2>
+          <h2 style={{fontFamily: "'Montserrat', sans-serif", fontSize: "36px", color: "#003366", marginBottom: "20px"}}>+15 Anos Conectando o Interior Paulista ao Mercado Nacional</h2>
           <p style={{fontSize: "18px", color: "#333", lineHeight: "1.6"}}>
-            A <strong>Dorathas</strong> é uma representante comercial especializada em serviços industriais e equipamentos periféricos. Com mais de <strong>15 anos de experiência</strong>, conectamos empresas às melhores soluções do mercado, oferecendo <strong>consultoria técnica e comercial</strong> para diversos segmentos da indústria.
+            A <strong>Dorathas Consultoria e Representações Industriais</strong> é especializada em representação comercial técnica, com sede em <strong>Limeira–SP</strong>. Nosso propósito é ser o elo estratégico entre <strong>fabricantes e fornecedores do interior paulista</strong> e as <strong>indústrias de todo o estado de São Paulo e do Brasil</strong>.
+          </p>
+          <p style={{fontSize: "18px", color: "#333", lineHeight: "1.6", marginTop: "16px"}}>
+            Com mais de <strong>15 anos de mercado</strong>, atuamos em seis frentes industriais — injeção de termoplásticos, termofixos, ferramentaria e moldes, usinagem CNC, equipamentos periféricos e tecnologia (MeasureTech 4.0) — sempre com atendimento técnico personalizado para engenharia, compras e produção.
           </p>
 
           <h3 style={{fontSize: "28px", color: "#003366", marginTop: "40px"}}>O Que Fazemos</h3>
@@ -374,8 +424,9 @@ function App() {
       <section id="termoplasticos" className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">Termoplásticos</h2>
-            <p className="text-xl text-gray-600">Injeção de termoplásticos com qualidade e precisão</p>
+            <p className="text-xs font-bold tracking-widest text-orange-500 uppercase mb-3">Representação Técnica · Interior Paulista</p>
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">Injeção de Termoplásticos</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">Representamos <strong>fabricantes especializados do interior de São Paulo</strong> em injeção de termoplásticos com PP, PE, ABS, Nylon, PC, POM, PBT e PET — levando soluções técnicas de precisão a indústrias em todo o Brasil.</p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -434,7 +485,7 @@ function App() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">Termofixos</h2>
-            <p className="text-xl text-gray-600">Moldagem a Quente por Compactação e Transfer com tecnologia avançada</p>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">Conectamos <strong>empresas do interior paulista</strong> especializadas em moldagem por compressão de termofixos — Baquelite, BMC e Melamina — com indústrias que exigem alta resistência térmica e dielétrica em todo o Brasil.</p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -496,8 +547,8 @@ function App() {
       <section id="moldes" className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">Desenvolvimento de Moldes</h2>
-            <p className="text-xl text-gray-600">Moldes de precisão para injeção e prensagem</p>
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">Ferramentaria e Moldes</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">Representamos <strong>ferramentarias de precisão do interior paulista</strong> na fabricação e manutenção de moldes para injeção e compressão, atendendo projetos em todo o estado de São Paulo e demais regiões do Brasil.</p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -575,8 +626,8 @@ function App() {
       <section id="usinagem" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">Usinagem de Precisão</h2>
-            <p className="text-xl text-gray-600">Usinagem CNC com tecnologia de ponta e mais de 25 anos de experiência</p>
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">Usinagem CNC</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">Levamos a capacidade de <strong>fornecedores de usinagem seriada do interior de SP</strong> — tornos CNC e centros automáticos — a indústrias de médio e grande porte em todo o Brasil que buscam precisão, prazo e escala.</p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
@@ -688,14 +739,7 @@ function App() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">Equipamentos Periféricos</h2>
-            <p className="text-xl text-gray-600">Soluções Completas para Indústria de Transformação de Plásticos</p>
-          </div>
-
-          <div className="mb-12">
-            <p className="text-lg text-gray-600 text-center max-w-4xl mx-auto">
-              Oferecemos soluções inovadoras em automação industrial para diversos setores, incluindo o alimentício, 
-              farmacêutico, automotivo e, com especialização, o setor de plásticos.
-            </p>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">Representamos <strong>fabricantes do interior paulista</strong> em alimentadores, dosadores, moinhos, esteiras, secadores e centrais de alimentação — equipamentos essenciais para linhas de injeção e extrusão em todo o Brasil.</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
@@ -984,8 +1028,8 @@ function App() {
       <section id="software" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">Software Industrial - MeasureTech</h2>
-            <p className="text-xl text-gray-600">Automação de Registro de Processos com Controle em Tempo Real</p>
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">Software MeasureTech 4.0</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">Como <strong>representante autorizado do MeasureTech 4.0</strong> para o interior de São Paulo e demais regiões, a Dorathas leva tecnologia de gestão e apontamento de produção em tempo real a indústrias que buscam eficiência operacional — sem depender de grandes centros.</p>
           </div>
 
           <div className="max-w-5xl mx-auto">
