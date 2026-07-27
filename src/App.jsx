@@ -1127,8 +1127,8 @@ function App() {
                 <h3 className="text-white text-xl font-semibold">Usinagem CNC</h3>
               </div>
               <div className="p-6">
-                <h4 className="text-lg font-semibold text-gray-800 mb-2">Inovações em Usinagem CNC</h4>
-                <p className="text-gray-600 mb-4">Como centros de usinagem verticais modernos transformam a produção industrial com precisão micrométrica e alta produtividade.</p>
+                <h4 className="text-lg font-semibold text-gray-800 mb-2">Usinagem CNC de Alta Performance: O Diferencial do Interior Paulista</h4>
+                <p className="text-gray-600 mb-4">Do CAD/CAM ao CMM: como ferramentarias do interior paulista entregam tolerâncias de ±0,005 mm e Cpk ≥ 1,33 para montadoras e indústria médica.</p>
                 <button
                   onClick={() => scrollToSection('blog-article-cnc')}
                   className="text-blue-600 hover:text-blue-800 font-medium cursor-pointer"
@@ -1143,8 +1143,8 @@ function App() {
                 <h3 className="text-white text-xl font-semibold">Sustentabilidade</h3>
               </div>
               <div className="p-6">
-                <h4 className="text-lg font-semibold text-gray-800 mb-2">Sustentabilidade na Indústria de Plásticos</h4>
-                <p className="text-gray-600 mb-4">Como o Moinho de Fresa transforma resíduos plásticos em matéria-prima reutilizável, gerando economia e sustentabilidade.</p>
+                <h4 className="text-lg font-semibold text-gray-800 mb-2">Moinho de Fresa: Economize até 60% em Matéria-Prima e Comprove para Auditoria ESG</h4>
+                <p className="text-gray-600 mb-4">O ROI do moinho de fresa com payback de 4 meses, percentuais seguros de reprocessado por resina e como especificar o equipamento correto.</p>
                 <button
                   onClick={() => scrollToSection('blog-article-sustentabilidade')}
                   className="text-green-600 hover:text-green-800 font-medium cursor-pointer"
@@ -1159,8 +1159,8 @@ function App() {
                 <h3 className="text-white text-xl font-semibold">Desenvolvimento de Moldes</h3>
               </div>
               <div className="p-6">
-                <h4 className="text-lg font-semibold text-gray-800 mb-2">Moldes de Precisão: Base da Qualidade em Injeção</h4>
-                <p className="text-gray-600 mb-4">Como moldes bem projetados garantem qualidade, eficiência e menor índice de refugo no processo de injeção.</p>
+                <h4 className="text-lg font-semibold text-gray-800 mb-2">Molde Bem Projetado, Produção Livre de Refugo: Guia Técnico Completo</h4>
+                <p className="text-gray-600 mb-4">P20 ou H13? Canal frio ou hot runner? Validação T0/T1/T2 e PPAP: o guia técnico completo para quem vai desenvolver ou comprar um molde de injeção.</p>
                 <button
                   onClick={() => scrollToSection('blog-article-moldes')}
                   className="text-purple-600 hover:text-purple-800 font-medium cursor-pointer"
@@ -1194,32 +1194,45 @@ function App() {
           
           <article className="bg-white rounded-lg shadow-lg p-8">
             <div className="mb-6">
-              <h1 className="text-4xl font-bold text-gray-800 mb-4">Inovações em Usinagem CNC: Transformando a Produção Industrial</h1>
+              <h1 className="text-4xl font-bold text-gray-800 mb-4">Usinagem CNC de Alta Performance: O Diferencial do Interior Paulista</h1>
               <div className="flex flex-wrap gap-4 text-gray-600 text-sm">
-                <span>📅 29 de Outubro de 2024</span>
+                <span>📅 27 de Julho de 2026</span>
                 <span>✍️ Dorathas</span>
-                <span>📚 Usinagem</span>
-                <span>⏱️ 5 min de leitura</span>
+                <span>📚 Usinagem · Ferramentaria</span>
+                <span>⏱️ 8 min de leitura</span>
               </div>
             </div>
             
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-              <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">A Evolução da Tecnologia CNC</h2>
-              <p>Os centros de usinagem vertical modernos oferecem capacidades que eram impensáveis há uma década. Com cursos de até 1000mm e capacidade de usinar peças de até 800kg, esses equipamentos permitem a produção de componentes complexos com tolerâncias extremamente apertadas.</p>
-              <p>A integração de sistemas de controle avançados, como softwares CAM de última geração, permite que os operadores programem peças complexas com precisão micrométrica. Isso resulta em redução de desperdício de material e aumento significativo da produtividade.</p>
-              
-              <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Aplicações Práticas</h2>
-              <p>Em setores como automotivo, aeronáutico e médico, a usinagem CNC é fundamental. Peças críticas para motores, componentes de aviões e implantes médicos exigem precisão absoluta, algo que apenas a usinagem CNC de alta qualidade pode garantir.</p>
-              <p>A Dorathas representa empresas especializadas em usinagem que dominam completamente essas tecnologias, oferecendo soluções para os mais variados desafios de produção.</p>
-              
-              <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Tendências Futuras</h2>
-              <ul className="list-disc list-inside space-y-2">
-                <li><strong>Automação Inteligente</strong>: Sistemas que aprendem e se adaptam durante a produção</li>
-                <li><strong>IoT Industrial</strong>: Monitoramento em tempo real de máquinas e processos</li>
-                <li><strong>Sustentabilidade</strong>: Redução de consumo de energia e otimização de recursos</li>
-                <li><strong>Manufatura Aditiva Híbrida</strong>: Combinação de usinagem com impressão 3D</li>
+              <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">O que define uma peça CNC de alta precisão</h2>
+              <p>Tolerância dimensional, rugosidade superficial e repetibilidade entre peças: esses três parâmetros separam uma peça CNC funcional de uma peça de alta performance. Centros de usinagem modernos operam com cursos superiores a 1.000 mm, capacidade de carga de até 800 kg e sistemas de fixação que eliminam o reposicionamento entre operações — mantendo tolerâncias de ±0,005 mm do início ao fim da produção.</p>
+              <p>O diferencial não está somente na máquina. Está na combinação entre equipamento, programação CAM, seleção de ferramental e protocolo de inspeção. Cada etapa interfere diretamente no resultado final.</p>
+
+              <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Centros verticais vs. horizontais: a escolha certa economiza tempo e dinheiro</h2>
+              <p>Centros de usinagem vertical (VMC) dominam a maioria das ferramentarias do interior paulista e são ideais para peças de médio porte com usinagem em face superior. Já os centros horizontais (HMC) ganham espaço em produção seriada de peças prismáticas, com troca automática de paletes que mantém o eixo-árvore em corte por mais de 90% do turno.</p>
+              <p>A escolha errada entre vertical e horizontal pode aumentar o tempo de setup em até 40% e reduzir a vida útil do ferramental por vibrações desnecessárias. Um representante técnico com experiência no setor consegue indicar a configuração correta antes da compra — evitando retrabalho custoso.</p>
+
+              <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">CAD/CAM e simulação: erros eliminados antes do primeiro corte</h2>
+              <p>A programação off-line via software CAM (Mastercam, Hypermill, NX CAM) permite simular toda a operação em ambiente virtual antes de executar na máquina. A simulação detecta colisões entre porta-ferramenta e fixação, valida percursos de usinagem, estima tempo de ciclo e identifica regiões com risco de vibração.</p>
+              <p>Empresas que integram CAD/CAM com pós-processador dedicado à máquina reduzem o tempo de setup em até 60% e praticamente eliminam sucatas por erro de programação — diferencial crítico em lotes pequenos com alto valor agregado.</p>
+
+              <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Materiais: do aço ferramenta ao alumínio aeronáutico</h2>
+              <p>Cada material exige uma estratégia diferente de usinagem:</p>
+              <ul className="list-disc list-inside space-y-2 mt-2">
+                <li><strong>Aço ferramenta P20 e H13</strong>: base de moldes e matrizes, exige avanços conservadores e pastilhas de metal duro com cobertura TiAlN</li>
+                <li><strong>Alumínio 6061 e 7075</strong>: alta velocidade de corte acima de 1.000 m/min em centros 5 eixos, acabamento espelhado possível sem retificação</li>
+                <li><strong>Inox austenítico (AISI 304/316)</strong>: baixa condutividade térmica exige boa refrigeração e ferramental específico para evitar encruamento</li>
+                <li><strong>Latão e cobre</strong>: excelente usinabilidade, usados como eletrodos em eletroerosão por penetração (EDM)</li>
               </ul>
-              <p>Essas inovações não apenas melhoram a qualidade dos produtos, mas também tornam a produção mais eficiente e sustentável.</p>
+              <p className="mt-4">A Dorathas representa ferramentarias com capacidade técnica para operar nessa diversidade de materiais, garantindo que o comprador receba a peça certa no prazo acordado.</p>
+
+              <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Inspeção dimensional: CMM e controle estatístico de processo</h2>
+              <p>Peça usinada sem inspeção documentada é peça sem garantia de conformidade. A inspeção por Máquina de Medição por Coordenadas (CMM) compara a peça física com o modelo 3D original, gerando relatório dimensional rastreável — exigência crescente de montadoras, indústria médica e aeronáutica.</p>
+              <p>O controle estatístico de processo (CEP) vai além: monitora variações ao longo da produção, identifica tendências de desvio antes que a peça saia da especificação e reduz o índice de refugo. Fornecedores com CEP implementado entregam Cpk ≥ 1,33 — padrão mínimo exigido pela IATF 16949 no setor automotivo.</p>
+
+              <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Por que o interior paulista é referência nacional em usinagem</h2>
+              <p>A região que vai de Campinas a São José do Rio Preto concentra décadas de tradição em ferramentaria, formação técnica consolidada (SENAI, FATEC, UNICAMP) e um ecossistema de fornecedores complementares — tratamento térmico, retífica, galvanoplastia, metrologia — que permite entregar peças acabadas com lead time competitivo.</p>
+              <p>Esse ecossistema é exatamente o que a Dorathas conecta ao comprador industrial de qualquer parte do Brasil: acesso a capacidade técnica de alta performance sem precisar manter estrutura de prospecção e qualificação de fornecedores.</p>
             </div>
           </article>
         </div>
@@ -1236,46 +1249,62 @@ function App() {
           
           <article className="bg-gray-50 rounded-lg shadow-lg p-8">
             <div className="mb-6">
-              <h1 className="text-4xl font-bold text-gray-800 mb-4">Sustentabilidade na Indústria de Plásticos: O Papel do Moinho de Fresa</h1>
+              <h1 className="text-4xl font-bold text-gray-800 mb-4">Moinho de Fresa na Injeção Plástica: Economize até 60% em Matéria-Prima e Comprove para Auditoria ESG</h1>
               <div className="flex flex-wrap gap-4 text-gray-600 text-sm">
-                <span>📅 22 de Outubro de 2024</span>
+                <span>📅 20 de Julho de 2026</span>
                 <span>✍️ Dorathas</span>
-                <span>📚 Sustentabilidade</span>
-                <span>⏱️ 6 min de leitura</span>
+                <span>📚 Sustentabilidade · Periféricos</span>
+                <span>⏱️ 9 min de leitura</span>
               </div>
             </div>
             
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-              <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">O Desafio do Desperdício de Plástico</h2>
-              <p>A indústria de plásticos gera uma quantidade significativa de resíduos durante o processo de produção. Rebarbas, peças defeituosas e sobras de material representam não apenas perda financeira, mas também impacto ambiental considerável.</p>
-              <p>Tradicionalmente esses resíduos eram descartados, contribuindo para a poluição ambiental. Hoje, com a tecnologia adequada, é possível transformar esses resíduos em matéria-prima reutilizável.</p>
-              
-              <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Como Funciona o Moinho de Fresa</h2>
-              <p>O moinho de fresa é um equipamento robusto que tritura materiais plásticos, transformando-os em partículas uniformes. Essas partículas podem ser:</p>
-              <ol className="list-decimal list-inside space-y-2">
-                <li><strong>Reaproveitadas internamente</strong>: Misturadas com material virgem para reduzir custos</li>
-                <li><strong>Vendidas como matéria-prima</strong>: Oferecidas para outras indústrias</li>
-                <li><strong>Processadas em novos produtos</strong>: Transformadas em novos itens através de injeção ou extrusão</li>
-              </ol>
-              
-              <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Benefícios Econômicos e Ambientais</h2>
-              <p><strong>Benefícios Econômicos:</strong></p>
-              <ul className="list-disc list-inside space-y-1 mb-4">
-                <li>Redução de custos de matéria-prima</li>
-                <li>Diminuição de custos de disposição de resíduos</li>
-                <li>Criação de novas fontes de receita</li>
+              <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">O custo real do refugo plástico</h2>
+              <p>Uma injetora de 250 toneladas rodando 20 horas por dia, 5 dias por semana, gera entre 80 e 200 kg de resíduo plástico por turno — entre galhos de bebedouro, purgas de troca de material e peças fora de especificação. A preço de resina virgem PP, isso representa entre R$ 400 e R$ 1.200 de material descartado por dia, fora o custo de coleta e destinação.</p>
+              <p>Multiplicado por 22 dias úteis e 12 meses, o impacto financeiro anual pode ultrapassar R$ 300.000 em matéria-prima jogada fora — sem contar a responsabilidade ambiental crescente imposta pela Lei de Resíduos Sólidos (Lei 12.305/2010) e auditorias ESG de clientes do setor automotivo e de bens de consumo.</p>
+
+              <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Como o moinho de fresa funciona na prática</h2>
+              <p>O moinho de fresa tritura resíduos plásticos através de um conjunto de facas fixas e rotativas que reduzem o material a partículas granuladas de granulometria controlada — normalmente entre 4 e 12 mm, dependendo da abertura da peneira instalada.</p>
+              <p>Os principais componentes que determinam a qualidade do granulado gerado:</p>
+              <ul className="list-disc list-inside space-y-2 mt-2">
+                <li><strong>Câmara de corte</strong>: dimensionamento correto evita embalagem e superaquecimento do material</li>
+                <li><strong>Facas e contra-facas</strong>: aço ferramenta tratado, com regularidade de manutenção definida</li>
+                <li><strong>Sistema de peneiras</strong>: controla granulometria do moído e elimina finos que prejudicam a injeção</li>
+                <li><strong>Extrator e soprador</strong>: conduz o material moído para silos ou diretamente à tremonha da injetora</li>
               </ul>
-              <p><strong>Benefícios Ambientais:</strong></p>
-              <ul className="list-disc list-inside space-y-1">
-                <li>Redução de resíduos em aterros sanitários</li>
-                <li>Menor consumo de recursos naturais</li>
-                <li>Diminuição da pegada de carbono</li>
-                <li>Contribuição para economia circular</li>
+
+              <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Moinho lento vs. moinho rápido: qual escolher</h2>
+              <p><strong>Moinhos de rotor lento (150–400 rpm)</strong> geram menos calor, produzem granulado mais uniforme e trabalham com ruído reduzido. São indicados para materiais sensíveis ao calor (PVC, ABS, PMMA) e operação próxima à injetora.</p>
+              <p><strong>Moinhos de rotor rápido (600–1.500 rpm)</strong> têm maior produtividade volumétrica e são indicados para materiais duros (nylon carregado, PP copolímero) e operação centralizada, distante das injetoras.</p>
+              <p>A especificação errada gera dois problemas opostos: subdimensionar cria gargalo na reciclagem; superdimensionar eleva o investimento e produz granulado irregular por câmara grande demais para o volume de refugo gerado.</p>
+
+              <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">A matemática do ROI: um exemplo real</h2>
+              <p>Considere uma empresa que injeta polipropileno e gera 120 kg/dia de refugo:</p>
+              <ul className="list-disc list-inside space-y-1 mt-2">
+                <li>Custo do refugo descartado: R$ 600/dia (R$ 5,00/kg × 120 kg)</li>
+                <li>Custo de coleta e destinação: R$ 80/dia</li>
+                <li><strong>Perda total sem moinho: R$ 680/dia → ~R$ 177.000/ano</strong></li>
               </ul>
-              
-              <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Casos de Sucesso</h2>
-              <p>Muitas empresas já implementaram sistemas de reciclagem com moinho de fresa e relatam redução de 40-60% no consumo de material virgem, economia significativa em custos operacionais e melhoria na imagem corporativa e sustentabilidade.</p>
-              <p>A Dorathas oferece soluções completas em equipamentos periféricos, incluindo moinho de fresa de alta qualidade, para empresas que desejam implementar práticas sustentáveis em suas operações.</p>
+              <p className="mt-3">Com moinho instalado (investimento ~R$ 35.000 para modelo de 75 kW):</p>
+              <ul className="list-disc list-inside space-y-1 mt-2">
+                <li>Material reutilizado (80% do refugo): R$ 480/dia recuperados</li>
+                <li>Custo de energia do moinho: ~R$ 40/dia</li>
+                <li><strong>Economia líquida: R$ 440/dia → ~R$ 114.000/ano</strong></li>
+              </ul>
+              <p className="mt-3"><strong>Payback médio: 4 meses.</strong> A partir do 5º mês, R$ 9.500/mês de economia pura.</p>
+
+              <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Percentual seguro de reprocessado por resina</h2>
+              <p>O percentual de material moído que pode ser misturado sem degradar as propriedades mecânicas varia por resina e precisa ser validado com testes:</p>
+              <ul className="list-disc list-inside space-y-2 mt-2">
+                <li><strong>PP e PE</strong>: até 30% de reprocessado sem perda significativa de propriedades</li>
+                <li><strong>ABS</strong>: até 20% — acima disso, queda de brilho e resistência ao impacto</li>
+                <li><strong>Nylon (PA6/PA66)</strong>: até 15% — altamente suscetível à degradação hidrolítica por reprocessamento</li>
+                <li><strong>PVC</strong>: até 10% com estabilizante — exige moinho inox para evitar contaminação cruzada</li>
+              </ul>
+
+              <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Equipamentos HM e o suporte técnico da Dorathas</h2>
+              <p>A Dorathas representa a linha de periféricos HM, com moinhos de fresa projetados para o ambiente de injeção plástica — câmaras dimensionadas para os volumes típicos do mercado brasileiro e assistência técnica no interior paulista.</p>
+              <p>Nossa equipe auxilia na especificação técnica correta antes da compra: análise do volume de refugo, seleção do modelo, dimensionamento elétrico e layout de integração à linha — sem custo adicional.</p>
             </div>
           </article>
         </div>
@@ -1292,45 +1321,50 @@ function App() {
           
           <article className="bg-white rounded-lg shadow-lg p-8">
             <div className="mb-6">
-              <h1 className="text-4xl font-bold text-gray-800 mb-4">Desenvolvimento de Moldes de Precisão: A Base da Qualidade em Injeção</h1>
+              <h1 className="text-4xl font-bold text-gray-800 mb-4">Molde Bem Projetado, Produção Livre de Refugo: O Guia Técnico Completo</h1>
               <div className="flex flex-wrap gap-4 text-gray-600 text-sm">
-                <span>📅 15 de Outubro de 2024</span>
+                <span>📅 13 de Julho de 2026</span>
                 <span>✍️ Dorathas</span>
-                <span>📚 Moldes</span>
-                <span>⏱️ 8 min de leitura</span>
+                <span>📚 Moldes · Injeção Plástica</span>
+                <span>⏱️ 10 min de leitura</span>
               </div>
             </div>
             
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-              <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">A Importância do Molde na Injeção</h2>
-              <p>O desenvolvimento de moldes de precisão é fundamental para o sucesso de qualquer operação de injeção de plástico. Um molde bem projetado e fabricado pode fazer a diferença entre um produto de qualidade excepcional e um repleto de defeitos.</p>
-              <p>O molde é, essencialmente, o "coração" do processo de injeção. É ele que define a forma final do produto, as tolerâncias dimensionais, a qualidade superficial e a consistência entre peças.</p>
-              
-              <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Tipos de Moldes Especializados</h2>
-              <h3 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Moldes para Termoplásticos</h3>
-              <p>Os termoplásticos como polietileno, polipropileno e ABS exigem moldes que permitam resfriamento rápido e uniforme, suportem pressões de injeção elevadas, tenham superfícies de alta qualidade e sejam fáceis de limpar e manter.</p>
-              
-              <h3 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Moldes para Injeção de Alumínio</h3>
-              <p>A injeção de alumínio é um processo especializado que requer moldes fabricados em aço de alta qualidade, sistemas de refrigeração sofisticados, precisão dimensional extrema e resistência a altas temperaturas.</p>
-              
-              <h3 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Moldes para Termofixos</h3>
-              <p>Os termofixos (como fenol-formaldeído) exigem moldes com sistemas de aquecimento, resistência a temperaturas elevadas, precisão para compactação uniforme e durabilidade excepcional.</p>
-              
-              <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">O Processo de Desenvolvimento</h2>
-              <p>O desenvolvimento de um molde de precisão segue etapas rigorosas:</p>
-              <ol className="list-decimal list-inside space-y-2">
-                <li>Análise do Produto - Estudo detalhado do design e requisitos</li>
-                <li>Projeto 3D - Modelagem completa do molde em CAD</li>
-                <li>Simulação - Análise de fluxo de material e resfriamento</li>
-                <li>Fabricação - Usinagem de alta precisão dos componentes</li>
-                <li>Montagem - Assemblagem cuidadosa e ajustes finais</li>
-                <li>Testes - Validação com injeções de teste</li>
-                <li>Otimização - Ajustes para melhorar qualidade e produtividade</li>
+              <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">A decisão mais crítica antes de injetar: o molde certo</h2>
+              <p>O custo de um molde representa entre 15% e 40% do investimento total de um novo projeto de injeção plástica — e erros no projeto do molde se propagam para cada uma das peças produzidas ao longo de toda a vida útil do ferramental. Um gate mal posicionado, um sistema de refrigeração subdimensionado ou um ângulo de saída insuficiente geram custos de retrabalho e paradas de produção que superam em muito o valor do molde original.</p>
+              <p>Por isso, a escolha do ferramenteiro e a especificação técnica correta do molde são decisões que precisam ser tomadas antes mesmo de cotar a resina.</p>
+
+              <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Aço ferramenta: P20, H13 ou inox 420?</h2>
+              <p>O aço do molde determina vida útil, custo de fabricação e capacidade de acabamento:</p>
+              <ul className="list-disc list-inside space-y-2 mt-2">
+                <li><strong>P20</strong>: o mais utilizado em moldes de termoplásticos, pré-temperado a 28–34 HRC, fácil de usinar e polir. Vida útil: 500.000 a 1.000.000 ciclos para materiais não abrasivos (PP, PE, ABS)</li>
+                <li><strong>H13</strong>: indicado para materiais abrasivos (nylon com fibra de vidro, PP com talco) e altas temperaturas de injeção. Temperado a 44–52 HRC. Vida útil: acima de 1.000.000 ciclos</li>
+                <li><strong>Inox 420</strong>: obrigatório para materiais corrosivos (PVC, retardantes de chama halogenados) ou produtos para contato alimentar. Custo 20–35% superior ao P20</li>
+                <li><strong>Alumínio 7075 e QC-10</strong>: moldes de prototipagem ou baixo volume (até 100.000 ciclos), com lead time de fabricação 50–60% menor que o aço</li>
+              </ul>
+
+              <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Sistema de alimentação: canal frio vs. câmara quente</h2>
+              <p>O sistema de canais define quanto material vira galho (refugo) a cada ciclo e qual é o tempo de ciclo mínimo possível.</p>
+              <p><strong>Canal frio</strong>: simples e de baixo custo, adequado para séries menores. O galho pode ser reaproveitado no moinho de fresa, mas aumenta o tempo de ciclo e o consumo de material por peça.</p>
+              <p><strong>Câmara quente (hot runner)</strong>: elimina o galho, reduz o tempo de ciclo em 15–30% e permite injetar em múltiplos pontos com pressão balanceada. O investimento adicional (R$ 15.000 a R$ 80.000 dependendo do número de bicos) se justifica em produções a partir de 500.000 peças/ano.</p>
+
+              <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Refrigeração: a engenharia que determina a produtividade</h2>
+              <p>O resfriamento do molde representa 60–80% do tempo total de ciclo de injeção. Um sistema de refrigeração mal projetado força ciclos longos, causa empenamento das peças e cria pontos de tensão residual que comprometem a resistência mecânica do produto.</p>
+              <p>Técnicas como conformational cooling (canais conformais fabricados por manufatura aditiva em aço) e simulação de fluxo térmico via Moldflow ou Cadmould permitem dimensionar o sistema antes da fabricação — reduzindo tempo de ciclo em até 30% e eliminando empenamento em peças de parede fina.</p>
+
+              <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Acabamento superficial, desmoldagem e escala VDI</h2>
+              <p>O acabamento da cavidade define a textura da superfície da peça. A escala VDI classifica de VDI 45 (textura grossa, 18 µm Ra) a VDI 0 (polimento espelhado, Ra &lt; 0,05 µm). O ângulo de saída deve ser calculado em função do acabamento: superfícies texturizadas exigem ângulos de 1° a 3° por 0,025 mm de profundidade de textura — regra que, quando ignorada, gera arranhões em 100% das peças.</p>
+
+              <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Etapas de validação: T0, T1, T2 e aprovação em série</h2>
+              <p>Um molde sai da ferramentaria apenas quando passa pelas etapas formais de validação:</p>
+              <ol className="list-decimal list-inside space-y-2 mt-2">
+                <li><strong>T0 (First Shot)</strong>: primeira injeção experimental, verifica preenchimento, marcas de fluxo e funcionamento básico</li>
+                <li><strong>T1</strong>: ajustes aplicados, parâmetros de processo definidos, inspeção dimensional 100% das amostras</li>
+                <li><strong>T2</strong>: validação com parâmetros finais, análise de repetibilidade entre ciclos e turnos</li>
+                <li><strong>PPAP</strong>: exigido por montadoras e indústria médica — pacote com FMEA, plano de controle, relatório dimensional e Cpk ≥ 1,67 para características críticas</li>
               </ol>
-              
-              <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Investimento em Qualidade</h2>
-              <p>Um molde de qualidade é um investimento que se paga rapidamente através de redução de refugo, aumento de produtividade, melhoria na qualidade do produto, maior vida útil do molde e menor necessidade de manutenção.</p>
-              <p>A Dorathas representa empresas com mais de 20 anos de experiência em desenvolvimento de moldes de precisão, garantindo soluções que atendem aos mais altos padrões de qualidade e inovação.</p>
+              <p className="mt-4">A Dorathas representa ferramenteiros com mais de 20 anos de experiência e acompanha o processo técnico junto ao fornecedor — garantindo que o comprador receba não apenas o molde, mas a documentação completa exigida pelos seus clientes finais.</p>
             </div>
           </article>
         </div>
