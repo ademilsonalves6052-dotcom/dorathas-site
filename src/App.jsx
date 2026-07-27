@@ -216,75 +216,38 @@ function App() {
             </button>
           </div>
 
-          {/* Mobile Menu */}
-          {isMenuOpen && (
-            <div className="lg:hidden mt-4 pb-4">
-              <div className="flex flex-col space-y-2">
-                <button 
-                  onClick={() => scrollToSection('quem-somos')} 
-                  className="px-4 py-2 bg-teal-500 text-white rounded-lg hover:bg-teal-600 transition-colors text-sm font-medium text-left"
-                >
-                  Quem Somos
-                </button>
-                <button 
-                  onClick={() => scrollToSection('termoplasticos')} 
-                  className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors text-sm font-medium text-left"
-                >
-                  Termoplásticos
-                </button>
-                <button 
-                  onClick={() => scrollToSection('termofixos')} 
-                  className="px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors text-sm font-medium text-left"
-                >
-                  Termofixos
-                </button>
-                <button 
-                  onClick={() => scrollToSection('moldes')} 
-                  className="px-4 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors text-sm font-medium text-left"
-                >
-                  Moldes
-                </button>
-                <button 
-                  onClick={() => scrollToSection('usinagem')} 
-                  className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors text-sm font-medium text-left"
-                >
-                  Usinagem
-                </button>
-                <button 
-                  onClick={() => scrollToSection('equipamentos')} 
-                  className="px-4 py-2 bg-indigo-500 text-white rounded-lg hover:bg-indigo-600 transition-colors text-sm font-medium text-left"
-                >
-                  Equipamentos
-                </button>
-                <button
-                  onClick={() => scrollToSection('software')}
-                  className="px-4 py-2 bg-cyan-500 text-white rounded-lg hover:bg-cyan-600 transition-colors text-sm font-medium text-left"
-                >
-                  Software
-                </button>
-                <button
-                  onClick={() => scrollToSection('cases')}
-                  className="px-4 py-2 bg-amber-500 text-white rounded-lg hover:bg-amber-600 transition-colors text-sm font-medium text-left"
-                >
-                  Cases
-                </button>
-                <button
-                  onClick={() => scrollToSection('blog')}
-                  className="px-4 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors text-sm font-medium text-left"
-                >
-                  Blog
-                </button>
-                <button 
-                  onClick={() => scrollToSection('contato')} 
-                  className="px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition-colors text-sm font-medium text-left"
-                >
-                  Contato
-                </button>
-              </div>
-            </div>
-          )}
         </div>
       </header>
+
+      {/* Mobile Menu Overlay — fixed full-screen, outside header to avoid clipping */}
+      {isMenuOpen && (
+        <div className="fixed inset-0 z-40 bg-white flex flex-col overflow-y-auto lg:hidden">
+          <div className="flex items-center justify-between px-4 py-4 border-b border-gray-200">
+            <img src={logoDorathas} alt="Dorathas" className="h-10" />
+            <button
+              onClick={() => setIsMenuOpen(false)}
+              className="p-2 text-gray-700"
+              aria-label="Fechar menu"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div className="flex flex-col p-6 space-y-3">
+            <button onClick={() => scrollToSection('quem-somos')} className="px-4 py-3 bg-teal-500 text-white rounded-lg hover:bg-teal-600 transition-colors text-sm font-medium text-left">Quem Somos</button>
+            <button onClick={() => scrollToSection('termoplasticos')} className="px-4 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors text-sm font-medium text-left">Termoplásticos</button>
+            <button onClick={() => scrollToSection('termofixos')} className="px-4 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors text-sm font-medium text-left">Termofixos</button>
+            <button onClick={() => scrollToSection('moldes')} className="px-4 py-3 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors text-sm font-medium text-left">Moldes</button>
+            <button onClick={() => scrollToSection('usinagem')} className="px-4 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors text-sm font-medium text-left">Usinagem</button>
+            <button onClick={() => scrollToSection('equipamentos')} className="px-4 py-3 bg-indigo-500 text-white rounded-lg hover:bg-indigo-600 transition-colors text-sm font-medium text-left">Equipamentos</button>
+            <button onClick={() => scrollToSection('software')} className="px-4 py-3 bg-cyan-500 text-white rounded-lg hover:bg-cyan-600 transition-colors text-sm font-medium text-left">Software</button>
+            <button onClick={() => scrollToSection('cases')} className="px-4 py-3 bg-amber-500 text-white rounded-lg hover:bg-amber-600 transition-colors text-sm font-medium text-left">Cases</button>
+            <button onClick={() => scrollToSection('blog')} className="px-4 py-3 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors text-sm font-medium text-left">Blog</button>
+            <button onClick={() => scrollToSection('contato')} className="px-4 py-3 bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition-colors text-sm font-medium text-left">Contato</button>
+          </div>
+        </div>
+      )}
 
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
@@ -533,10 +496,11 @@ function App() {
                 alt="Prensa de Termofixos" 
                 className="w-full h-48 object-cover rounded-lg shadow-lg"
               />
-              <img 
-                src={dorathasPecasTermofixos} 
-                alt="Peças de Termofixos" 
-                className="w-full h-48 object-cover rounded-lg shadow-lg"
+              {/* PENDENTE: verificar se imagem contém marca visível — Issue 5: object-top corrige faixa preta inferior */}
+              <img
+                src={dorathasPecasTermofixos}
+                alt="Peças de Termofixos"
+                className="w-full h-48 object-cover object-top rounded-lg shadow-lg"
               />
             </div>
           </div>
@@ -744,10 +708,10 @@ function App() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img 
-                src={hmAlimentadorMono} 
-                alt="Alimentador Monofásico" 
-                className="w-full h-48 object-cover"
+              <img
+                src={hmAlimentadorMono}
+                alt="Alimentador Monofásico"
+                className="w-full h-48 object-cover object-top"
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">Alimentador Monofásico</h3>
@@ -756,10 +720,11 @@ function App() {
             </div>
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img 
-                src={hmAlimentadorTri} 
-                alt="Alimentador Trifásico" 
-                className="w-full h-48 object-cover"
+              {/* PENDENTE: remover marca HM */}
+              <img
+                src={hmAlimentadorTri}
+                alt="Alimentador Trifásico"
+                className="w-full h-48 object-cover object-top"
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">Alimentador Trifásico</h3>
@@ -804,9 +769,10 @@ function App() {
             </div>
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img 
-                src={hmMoinhoFresa} 
-                alt="Moinhos Fresa" 
+              {/* PENDENTE: remover marca Siletes */}
+              <img
+                src={hmMoinhoFresa}
+                alt="Moinhos Fresa"
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">

@@ -121,21 +121,35 @@ function AppVibrante() {
           </button>
         </div>
 
-        {isMenuOpen && (
-          <nav className="md:hidden bg-gray-50 p-4 space-y-2">
-            <button onClick={() => scrollToSection('quem-somos')} className="block w-full text-left p-2 hover:bg-gray-200">Quem Somos</button>
-            <button onClick={() => scrollToSection('termoplasticos')} className="block w-full text-left p-2 hover:bg-gray-200">Termoplásticos</button>
-            <button onClick={() => scrollToSection('termofixos')} className="block w-full text-left p-2 hover:bg-gray-200">Termofixos</button>
-            <button onClick={() => scrollToSection('moldes')} className="block w-full text-left p-2 hover:bg-gray-200">Moldes</button>
-            <button onClick={() => scrollToSection('usinagem')} className="block w-full text-left p-2 hover:bg-gray-200">Usinagem</button>
-            <button onClick={() => scrollToSection('equipamentos')} className="block w-full text-left p-2 hover:bg-gray-200">Equipamentos</button>
-            <button onClick={() => scrollToSection('software')} className="block w-full text-left p-2 hover:bg-gray-200">Software</button>
-            <button onClick={() => scrollToSection('cases')} className="block w-full text-left p-2 hover:bg-gray-200">Cases</button>
-            <button onClick={() => scrollToSection('blog')} className="block w-full text-left p-2 hover:bg-gray-200">Blog</button>
-            <button onClick={() => scrollToSection('contato')} className="block w-full text-left p-2 hover:bg-gray-200">Contato</button>
-          </nav>
-        )}
       </header>
+
+      {/* Mobile Menu Overlay — fixed full-screen, outside header to avoid clipping */}
+      {isMenuOpen && (
+        <div className="fixed inset-0 z-40 bg-white flex flex-col overflow-y-auto md:hidden">
+          <div className="flex items-center justify-between px-4 py-4 border-b border-gray-200">
+            <img src={logoDorathas} alt="Dorathas" className="h-10" />
+            <button
+              onClick={() => setIsMenuOpen(false)}
+              className="p-2 text-gray-700"
+              aria-label="Fechar menu"
+            >
+              <X size={24} />
+            </button>
+          </div>
+          <nav className="flex flex-col p-6 space-y-3">
+            <button onClick={() => scrollToSection('quem-somos')} className="px-4 py-3 text-left font-medium text-gray-800 border-b border-gray-100 hover:text-blue-600">Quem Somos</button>
+            <button onClick={() => scrollToSection('termoplasticos')} className="px-4 py-3 text-left font-medium text-gray-800 border-b border-gray-100 hover:text-blue-600">Termoplásticos</button>
+            <button onClick={() => scrollToSection('termofixos')} className="px-4 py-3 text-left font-medium text-gray-800 border-b border-gray-100 hover:text-blue-600">Termofixos</button>
+            <button onClick={() => scrollToSection('moldes')} className="px-4 py-3 text-left font-medium text-gray-800 border-b border-gray-100 hover:text-blue-600">Moldes</button>
+            <button onClick={() => scrollToSection('usinagem')} className="px-4 py-3 text-left font-medium text-gray-800 border-b border-gray-100 hover:text-blue-600">Usinagem</button>
+            <button onClick={() => scrollToSection('equipamentos')} className="px-4 py-3 text-left font-medium text-gray-800 border-b border-gray-100 hover:text-blue-600">Equipamentos</button>
+            <button onClick={() => scrollToSection('software')} className="px-4 py-3 text-left font-medium text-gray-800 border-b border-gray-100 hover:text-blue-600">Software</button>
+            <button onClick={() => scrollToSection('cases')} className="px-4 py-3 text-left font-medium text-gray-800 border-b border-gray-100 hover:text-blue-600">Cases</button>
+            <button onClick={() => scrollToSection('blog')} className="px-4 py-3 text-left font-medium text-gray-800 border-b border-gray-100 hover:text-blue-600">Blog</button>
+            <button onClick={() => scrollToSection('contato')} className="px-4 py-3 text-left font-medium text-gray-800 hover:text-blue-600">Contato</button>
+          </nav>
+        </div>
+      )}
 
       {/* Hero Carousel */}
       <section className="relative h-screen overflow-hidden">
@@ -352,7 +366,7 @@ function AppVibrante() {
 
             <div className="grid grid-cols-2 gap-4">
               <img src={dorathaspensaTermofixos} alt="Prensa Termofixos" className="w-full h-64 object-cover rounded-lg shadow-lg" />
-              <img src={dorathasPecasTermofixos} alt="Peças Termofixos" className="w-full h-64 object-cover rounded-lg shadow-lg" />
+              <img src={dorathasPecasTermofixos} alt="Peças Termofixos" className="w-full h-64 object-cover object-top rounded-lg shadow-lg" />
             </div>
           </div>
         </div>
@@ -484,7 +498,7 @@ function AppVibrante() {
             </div>
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
-              <img src={hmAlimentadorMono} alt="Alimentador" className="w-full h-48 object-cover" />
+              <img src={hmAlimentadorMono} alt="Alimentador" className="w-full h-48 object-cover object-top" />
               <div className="p-4">
                 <h4 className="font-bold text-lg mb-2" style={{color: '#003366'}}>Alimentadores</h4>
                 <p className="text-gray-600 text-sm">Alimentadores monofásicos e trifásicos de alta performance.</p>
