@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import { Button } from '@/components/ui/button.jsx'
 import { ChevronLeft, ChevronRight, Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin } from 'lucide-react'
 import './App.css'
 
@@ -22,17 +21,7 @@ import hmSecagem from './assets/hm_secagem.webp'
 import hmSiloArmazenagem from './assets/hm_silo_armazenagem.jpeg'
 import hmCentralAlimentacao from './assets/hm_central_alimentacao.jpeg'
 
-// Import logos das empresas famosas para cases
-import logo_plastek from './assets/logo_plastek_novo.png';
-import logo_multilaser from './assets/logo_multilaser_novo.png';
-import logo_fabercastel from './assets/logo_fabercastel_novo.png';
-import logo_novel from './assets/logo_novel_novo.jpg';
-import logo_electrolux from './assets/logo_electrolux_novo.png';
-import logo_anauger from './assets/logo_anauger_novo.png';
-import logo_plasticor from './assets/logo_plasticor_novo.jpg';
-import logo_latina from './assets/logo_latina_novo.jpeg';
-
-// Import logos corretos das empresas
+// Import logos das empresas
 import logo_plastek_colorido from './assets/logo_plastek_colorido.png';
 import logo_multilaser_colorido from './assets/multilaser-logo.jpg';
 import logo_fabercastel_colorido from './assets/logo_fabercastel_colorido.png';
@@ -40,13 +29,11 @@ import logo_novel_colorido from './assets/novel-logo.png';
 import logo_electrolux_colorido from './assets/logo_electrolux_novo.png';
 import logo_anauger_colorido from './assets/ebf-logo.png';
 import logo_plasticor_colorido from './assets/plasticor-logo.jpg';
-import logo_latina_colorido from './assets/metagal-logo.png';
 import logo_isopower from './assets/isopower-logo.webp';
 
 // Import imagens ilustrativas de moldes
 import moldeInjecao1 from './assets/molde_injecao_ilustrativo_1.png';
 import moldeInjecao2 from './assets/molde_injecao_ilustrativo_2.jpg';
-import moldeInjecao3 from './assets/molde_injecao_ilustrativo_3.png';
 
 // Import imagens ilustrativas de peças usinadas
 import pecasUsinadas1 from './assets/pecas_usinadas_ilustrativo_1.jpg';
@@ -62,22 +49,26 @@ function App() {
     {
       title: "Representações em Serviços e Equipamentos",
       subtitle: "Representação e Consultoria em Serviços",
-      background: dorathasMaquinaInjecao
+      background: dorathasMaquinaInjecao,
+      target: 'termoplasticos'
     },
     {
       title: "Termofixos",
-      subtitle: "Representação e Consultoria em Serviços", 
-      background: dorathaspensaTermofixos
+      subtitle: "Representação e Consultoria em Serviços",
+      background: dorathaspensaTermofixos,
+      target: 'termofixos'
     },
     {
       title: "Desenvolvimento de Moldes",
       subtitle: "Representação e Consultoria em Serviços",
-      background: dorathasCentroUsinagem
+      background: dorathasCentroUsinagem,
+      target: 'moldes'
     },
     {
       title: "Usinagem de Precisão",
       subtitle: "Representação e Consultoria em Serviços",
-      background: dorathasTornoAutomatico
+      background: dorathasTornoAutomatico,
+      target: 'usinagem'
     }
   ]
 
@@ -311,8 +302,8 @@ function App() {
           <p className="text-xl md:text-2xl mb-8 animate-fade-in-delay">
             {slides[currentSlide].subtitle}
           </p>
-          <button 
-            onClick={() => scrollToSection('termoplasticos')}
+          <button
+            onClick={() => scrollToSection(slides[currentSlide].target)}
             className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-8 rounded-lg transition-colors animate-fade-in-delay-2"
           >
             SAIBA MAIS
@@ -349,7 +340,7 @@ function App() {
             <div style={{flex: "1", minWidth: "250px"}}>
               <h4 style={{fontSize: "22px", color: "#005599"}}>Serviços Industriais</h4>
               <ul style={{fontSize: "16px", color: "#444", lineHeight: "1.8"}}>
-                <li>Injeção de Termoplasticos</li>
+                <li>Injeção de Termoplásticos</li>
                 <li>Moldagem a quente por compressão de termofixos (baquelite etc)</li>
                 <li>Desenvolvimento de Moldes</li>
                 <li>Usinagem de Precisão</li>
@@ -1044,7 +1035,7 @@ function App() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-cyan-600 font-bold mr-3">✓</span>
-                  <span><strong>Consistência nos dados gerado:</strong> Dados confiáveis e automatizados sem erros manuais</span>
+                  <span><strong>Consistência nos dados gerados:</strong> Dados confiáveis e automatizados sem erros manuais</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-cyan-600 font-bold mr-3">✓</span>
@@ -1095,7 +1086,7 @@ function App() {
                 <h4 className="text-lg font-semibold text-gray-800 mb-2">Inovações em Usinagem CNC</h4>
                 <p className="text-gray-600 mb-4">Como centros de usinagem verticais modernos transformam a produção industrial com precisão micrométrica e alta produtividade.</p>
                 <button
-                  onClick={() => scrollToSection('blog-article-software')}
+                  onClick={() => scrollToSection('blog-article-cnc')}
                   className="text-blue-600 hover:text-blue-800 font-medium cursor-pointer"
                 >
                   Leia mais →
@@ -1111,7 +1102,7 @@ function App() {
                 <h4 className="text-lg font-semibold text-gray-800 mb-2">Sustentabilidade na Indústria de Plásticos</h4>
                 <p className="text-gray-600 mb-4">Como o Moinho de Fresa transforma resíduos plásticos em matéria-prima reutilizável, gerando economia e sustentabilidade.</p>
                 <button
-                  onClick={() => scrollToSection('blog-article-qualidade')}
+                  onClick={() => scrollToSection('blog-article-sustentabilidade')}
                   className="text-green-600 hover:text-green-800 font-medium cursor-pointer"
                 >
                   Leia mais →
@@ -1127,7 +1118,7 @@ function App() {
                 <h4 className="text-lg font-semibold text-gray-800 mb-2">Moldes de Precisão: Base da Qualidade em Injeção</h4>
                 <p className="text-gray-600 mb-4">Como moldes bem projetados garantem qualidade, eficiência e menor índice de refugo no processo de injeção.</p>
                 <button
-                  onClick={() => scrollToSection('blog-article-gestao')}
+                  onClick={() => scrollToSection('blog-article-moldes')}
                   className="text-purple-600 hover:text-purple-800 font-medium cursor-pointer"
                 >
                   Leia mais →
@@ -1148,7 +1139,7 @@ function App() {
       </section>
 
       {/* Artigos do Blog */}
-      <section id="blog-article-software" className="py-16 bg-gray-50">
+      <section id="blog-article-cnc" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
           <button 
             onClick={() => scrollToSection('blog')}
@@ -1190,7 +1181,7 @@ function App() {
         </div>
       </section>
 
-      <section id="blog-article-qualidade" className="py-16 bg-white">
+      <section id="blog-article-sustentabilidade" className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
           <button 
             onClick={() => scrollToSection('blog')}
@@ -1246,7 +1237,7 @@ function App() {
         </div>
       </section>
 
-      <section id="blog-article-gestao" className="py-16 bg-gray-50">
+      <section id="blog-article-moldes" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
           <button 
             onClick={() => scrollToSection('blog')}
@@ -1442,7 +1433,7 @@ function App() {
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-8">
         <div className="container mx-auto px-4 text-center">
-          <p>&copy; 2024 Dorathas - Representações em Serviços e Equipamentos Industriais. Todos os direitos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Dorathas - Representações em Serviços e Equipamentos Industriais. Todos os direitos reservados.</p>
         </div>
       </footer>
 
@@ -1452,7 +1443,10 @@ function App() {
         className="fixed bottom-20 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-colors z-50"
         title="WhatsApp"
       >
-        <Phone className="w-6 h-6" />
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+          <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.85L.057 23.571a.5.5 0 0 0 .612.612l5.72-1.475A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.66-.52-5.17-1.426l-.37-.22-3.392.874.893-3.296-.24-.383A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+        </svg>
       </button>
     </div>
   )

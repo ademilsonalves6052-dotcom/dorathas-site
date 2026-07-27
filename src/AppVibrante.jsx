@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { Button } from '@/components/ui/button.jsx'
 import { ChevronLeft, ChevronRight, Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin, Menu, X } from 'lucide-react'
 import './App.css'
 
@@ -37,8 +36,7 @@ import logo_isopower from './assets/isopower-logo.webp'
 import moldeInjecao1 from './assets/molde_injecao_ilustrativo_1.png'
 import moldeInjecao2 from './assets/molde_injecao_ilustrativo_2.jpg'
 import moldeInjecao3 from './assets/molde_injecao_ilustrativo_3.png'
-import pecasUsinadas1 from './assets/pecas_usinadas_ilustrativo_1.jpg'
-import pecasUsinadas2 from './assets/pecas_usinadas_ilustrativo_2.jpg'
+
 import pecasUsinadasLatao from './assets/pecas_usinadas_latao.jpg'
 import pecasUsinadasAco from './assets/pecas_usinadas_aco.jpg'
 import maquinaCncUsinando from './assets/maquina_cnc_usinando.png'
@@ -50,6 +48,16 @@ import maquinaCncUsinando from './assets/maquina_cnc_usinando.png'
 function AppVibrante() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' })
+  const [formSubmitted, setFormSubmitted] = useState(false)
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const text = `Olá! Meu nome é ${formData.name || 'visitante do site'}.${formData.phone ? ` Meu telefone: ${formData.phone}.` : ''}${formData.email ? ` E-mail: ${formData.email}.` : ''} ${formData.message || 'Gostaria de saber mais sobre os serviços da Dorathas.'}`
+    window.open(`https://wa.me/5519993914471?text=${encodeURIComponent(text)}`, '_blank')
+    setFormSubmitted(true)
+    setFormData({ name: '', email: '', phone: '', message: '' })
+  }
 
   const slides = [
     {
@@ -130,7 +138,7 @@ function AppVibrante() {
       </header>
 
       {/* Hero Carousel */}
-      <section className="relative h-96 overflow-hidden">
+      <section className="relative h-screen overflow-hidden">
         {slides.map((slide, index) => (
           <div
             key={index}
@@ -666,8 +674,8 @@ function AppVibrante() {
             <img src={logo_fabercastel_colorido} alt="Faber Castel" className="h-20 object-contain" />
             <img src={logo_multilaser_colorido} alt="Multilaser" className="h-20 object-contain" />
             <img src={logo_plasticor_colorido} alt="Plasticor" className="h-20 object-contain" />
-            <img src={logo_metagal_colorido} alt="Metagal" className="h-20 object-contain" />
-            <img src={logo_anauger_colorido} alt="Anauger" className="h-20 object-contain" />
+            <img src={logo_anauger_colorido} alt="EBF" className="h-20 object-contain" />
+            <img src={logo_isopower} alt="ISOPOWER" className="h-20 object-contain" />
           </div>
 
           <div className="text-center mt-8">
@@ -732,30 +740,59 @@ function AppVibrante() {
             </div>
 
             <div>
-              <h3 className="text-2xl font-bold mb-6">Redes Sociais</h3>
-              
-              <div className="space-y-4">
-                <button onClick={() => window.open('https://www.instagram.com/dorathas_88/', '_blank')} className="w-full bg-white/10 hover:bg-white/20 text-white p-4 rounded-lg text-left flex items-center gap-3 transition">
-                  <Instagram size={24} />
-                  <span>Instagram: @dorathas_88</span>
-                </button>
+              <h3 className="text-2xl font-bold mb-6">Envie uma Mensagem</h3>
 
-                <button onClick={() => window.open('https://www.facebook.com/dorathascom/', '_blank')} className="w-full bg-white/10 hover:bg-white/20 text-white p-4 rounded-lg text-left flex items-center gap-3 transition">
-                  <Facebook size={24} />
-                  <span>Facebook: Dorathas</span>
-                </button>
-
-                <button onClick={() => window.open('https://www.linkedin.com/in/ade88/', '_blank')} className="w-full bg-white/10 hover:bg-white/20 text-white p-4 rounded-lg text-left flex items-center gap-3 transition">
-                  <Linkedin size={24} />
-                  <span>LinkedIn: Ade88</span>
-                </button>
-              </div>
-
-              <div className="mt-8 p-6 bg-white/10 rounded-lg">
-                <p className="text-blue-100">
-                  Estamos sempre prontos para ajudar com consultoria técnica e comercial especializada. Entre em contato conosco!
-                </p>
-              </div>
+              {formSubmitted ? (
+                <div className="p-6 bg-green-600 rounded-lg text-center">
+                  <p className="text-xl font-bold mb-2">Mensagem enviada!</p>
+                  <p className="text-green-100">Redirecionamos você para o WhatsApp. Responderemos em breve.</p>
+                  <button
+                    onClick={() => setFormSubmitted(false)}
+                    className="mt-4 bg-white text-green-700 px-6 py-2 rounded-lg font-semibold hover:bg-green-50 transition"
+                  >
+                    Enviar outra mensagem
+                  </button>
+                </div>
+              ) : (
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <input
+                    type="text"
+                    placeholder="Seu nome *"
+                    required
+                    value={formData.name}
+                    onChange={(e) => setFormData({...formData, name: e.target.value})}
+                    className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/30 text-white placeholder-blue-200 focus:outline-none focus:border-white"
+                  />
+                  <input
+                    type="email"
+                    placeholder="Seu e-mail"
+                    value={formData.email}
+                    onChange={(e) => setFormData({...formData, email: e.target.value})}
+                    className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/30 text-white placeholder-blue-200 focus:outline-none focus:border-white"
+                  />
+                  <input
+                    type="tel"
+                    placeholder="Seu telefone"
+                    value={formData.phone}
+                    onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                    className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/30 text-white placeholder-blue-200 focus:outline-none focus:border-white"
+                  />
+                  <textarea
+                    rows={4}
+                    placeholder="Sua mensagem *"
+                    required
+                    value={formData.message}
+                    onChange={(e) => setFormData({...formData, message: e.target.value})}
+                    className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/30 text-white placeholder-blue-200 focus:outline-none focus:border-white resize-none"
+                  />
+                  <button
+                    type="submit"
+                    className="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-bold text-lg transition"
+                  >
+                    Enviar via WhatsApp
+                  </button>
+                </form>
+              )}
             </div>
           </div>
         </div>
@@ -764,7 +801,7 @@ function AppVibrante() {
       {/* Footer */}
       <footer className="bg-black text-white py-8">
         <div className="container mx-auto px-4 text-center">
-          <p className="mb-2">© 2024 Dorathas - Representações em Serviços e Equipamentos Industriais</p>
+          <p className="mb-2">© {new Date().getFullYear()} Dorathas - Representações em Serviços e Equipamentos Industriais</p>
           <p className="text-gray-400">Conectando empresas às melhores soluções industriais desde 2009</p>
         </div>
       </footer>
@@ -775,7 +812,10 @@ function AppVibrante() {
         className="fixed bottom-20 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition z-50"
         title="WhatsApp"
       >
-        <Phone size={24} />
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+          <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.85L.057 23.571a.5.5 0 0 0 .612.612l5.72-1.475A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.66-.52-5.17-1.426l-.37-.22-3.392.874.893-3.296-.24-.383A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+        </svg>
       </button>
     </div>
   )
