@@ -1172,12 +1172,7 @@ function App() {
           </div>
 
           <div className="text-center mt-12">
-            <button 
-              onClick={() => window.open('https://www.dorathas.com.br/blog', '_blank')}
-              className="bg-gray-800 text-white px-8 py-3 rounded-lg hover:bg-gray-700 transition-colors cursor-pointer"
-            >
-              Ver Todos os Artigos no Blog
-            </button>
+            <p className="text-gray-500 text-sm">Novos artigos técnicos em breve — fique de olho.</p>
           </div>
         </div>
       </section>
@@ -1233,6 +1228,16 @@ function App() {
               <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Por que o interior paulista é referência nacional em usinagem</h2>
               <p>A região que vai de Campinas a São José do Rio Preto concentra décadas de tradição em ferramentaria, formação técnica consolidada (SENAI, FATEC, UNICAMP) e um ecossistema de fornecedores complementares — tratamento térmico, retífica, galvanoplastia, metrologia — que permite entregar peças acabadas com lead time competitivo.</p>
               <p>Esse ecossistema é exatamente o que a Dorathas conecta ao comprador industrial de qualquer parte do Brasil: acesso a capacidade técnica de alta performance sem precisar manter estrutura de prospecção e qualificação de fornecedores.</p>
+            </div>
+
+            <div className="mt-10 p-6 bg-orange-50 border border-orange-200 rounded-lg">
+              <p className="text-sm font-bold text-orange-600 uppercase tracking-widest mb-2">Precisa de peças usinadas?</p>
+              <h3 className="text-xl font-bold text-gray-800 mb-3">A Dorathas conecta você ao ferramenteiro certo no interior paulista.</h3>
+              <p className="text-gray-600 mb-5 text-sm">Envie o desenho técnico ou a demanda e nossa equipe indica a solução mais adequada — sem custo de consultoria.</p>
+              <div className="flex flex-wrap gap-3">
+                <button onClick={() => scrollToSection('contato')} className="px-6 py-2 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-lg transition-colors text-sm">Solicitar Cotação</button>
+                <button onClick={openWhatsApp} className="px-6 py-2 border-2 border-gray-800 hover:bg-gray-800 hover:text-white text-gray-800 font-bold rounded-lg transition-colors text-sm">Falar com Especialista</button>
+              </div>
             </div>
           </article>
         </div>
