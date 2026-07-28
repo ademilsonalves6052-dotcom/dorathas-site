@@ -685,6 +685,16 @@ function AppVibrante() {
               <p>A região que vai de Campinas a São José do Rio Preto concentra décadas de tradição em ferramentaria, formação técnica consolidada (SENAI, FATEC, UNICAMP) e um ecossistema de fornecedores complementares — tratamento térmico, retífica, galvanoplastia, metrologia — que permite entregar peças acabadas com lead time competitivo.</p>
               <p>Esse ecossistema é exatamente o que a Dorathas conecta ao comprador industrial de qualquer parte do Brasil: acesso a capacidade técnica de alta performance sem precisar manter estrutura própria de prospecção e qualificação de fornecedores.</p>
             </div>
+
+            <div className="mt-10 p-6 rounded-lg border" style={{backgroundColor: '#fff7ed', borderColor: '#FF6600'}}>
+              <p className="text-sm font-bold uppercase tracking-widest mb-2" style={{color: '#FF6600'}}>Precisa de peças usinadas?</p>
+              <h3 className="text-xl font-bold mb-3" style={{color: '#003366'}}>A Dorathas conecta você ao ferramenteiro certo no interior paulista.</h3>
+              <p className="text-gray-600 mb-5 text-sm">Envie o desenho técnico ou a demanda e nossa equipe indica a solução mais adequada — sem custo de consultoria.</p>
+              <div className="flex flex-wrap gap-3">
+                <button onClick={() => scrollToSection('contato')} className="px-6 py-2 text-white font-bold rounded-lg transition-colors text-sm" style={{backgroundColor: '#FF6600'}} onMouseOver={e => e.currentTarget.style.backgroundColor='#cc5200'} onMouseOut={e => e.currentTarget.style.backgroundColor='#FF6600'}>Solicitar Cotação</button>
+                <button onClick={openWhatsApp} className="px-6 py-2 font-bold rounded-lg transition-colors text-sm border-2" style={{borderColor: '#003366', color: '#003366'}} onMouseOver={e => { e.currentTarget.style.backgroundColor='#003366'; e.currentTarget.style.color='white' }} onMouseOut={e => { e.currentTarget.style.backgroundColor='transparent'; e.currentTarget.style.color='#003366' }}>Falar com Especialista</button>
+              </div>
+            </div>
           </article>
         </div>
       </section>
@@ -736,6 +746,16 @@ function AppVibrante() {
               <h2 className="text-2xl font-bold mt-8 mb-4" style={{color: '#003366'}}>Equipamentos HM e o suporte técnico da Dorathas</h2>
               <p>A Dorathas representa a linha de periféricos HM, com moinhos projetados para o ambiente de injeção plástica e assistência técnica no interior paulista. Nossa equipe auxilia na especificação antes da compra: análise do volume de refugo, seleção do modelo, dimensionamento elétrico e layout de integração — sem custo adicional.</p>
             </div>
+
+            <div className="mt-10 p-6 rounded-lg border" style={{backgroundColor: '#fff7ed', borderColor: '#FF6600'}}>
+              <p className="text-sm font-bold uppercase tracking-widest mb-2" style={{color: '#FF6600'}}>Quer implantar ou substituir um moinho de fresa?</p>
+              <h3 className="text-xl font-bold mb-3" style={{color: '#003366'}}>A Dorathas especifica e fornece o modelo certo para o seu volume de refugo.</h3>
+              <p className="text-gray-600 mb-5 text-sm">Informe o tipo de resina, volume de galho e layout da linha — nossa equipe indica o moinho ideal sem custo de consultoria.</p>
+              <div className="flex flex-wrap gap-3">
+                <button onClick={() => scrollToSection('contato')} className="px-6 py-2 text-white font-bold rounded-lg transition-colors text-sm" style={{backgroundColor: '#FF6600'}} onMouseOver={e => e.currentTarget.style.backgroundColor='#cc5200'} onMouseOut={e => e.currentTarget.style.backgroundColor='#FF6600'}>Solicitar Cotação</button>
+                <button onClick={openWhatsApp} className="px-6 py-2 font-bold rounded-lg transition-colors text-sm border-2" style={{borderColor: '#003366', color: '#003366'}} onMouseOver={e => { e.currentTarget.style.backgroundColor='#003366'; e.currentTarget.style.color='white' }} onMouseOut={e => { e.currentTarget.style.backgroundColor='transparent'; e.currentTarget.style.color='#003366' }}>Falar com Especialista</button>
+              </div>
+            </div>
           </article>
         </div>
       </section>
@@ -781,6 +801,16 @@ function AppVibrante() {
                 <li><strong>PPAP:</strong> pacote completo com FMEA, plano de controle, relatório dimensional e Cpk ≥ 1,67 para características críticas</li>
               </ol>
               <p>A Dorathas representa ferramenteiros com mais de 20 anos de experiência e acompanha o processo técnico junto ao fornecedor — garantindo molde, processo e documentação completa para o comprador.</p>
+            </div>
+
+            <div className="mt-10 p-6 rounded-lg border" style={{backgroundColor: '#fff7ed', borderColor: '#FF6600'}}>
+              <p className="text-sm font-bold uppercase tracking-widest mb-2" style={{color: '#FF6600'}}>Precisa de um molde novo ou manutenção de ferramental?</p>
+              <h3 className="text-xl font-bold mb-3" style={{color: '#003366'}}>A Dorathas conecta você ao ferramenteiro certo — com acompanhamento técnico de T0 ao PPAP.</h3>
+              <p className="text-gray-600 mb-5 text-sm">Envie o projeto ou a demanda e indicamos a ferramentaria mais adequada para o seu material, cavitação e volume de produção.</p>
+              <div className="flex flex-wrap gap-3">
+                <button onClick={() => scrollToSection('contato')} className="px-6 py-2 text-white font-bold rounded-lg transition-colors text-sm" style={{backgroundColor: '#FF6600'}} onMouseOver={e => e.currentTarget.style.backgroundColor='#cc5200'} onMouseOut={e => e.currentTarget.style.backgroundColor='#FF6600'}>Solicitar Cotação</button>
+                <button onClick={openWhatsApp} className="px-6 py-2 font-bold rounded-lg transition-colors text-sm border-2" style={{borderColor: '#003366', color: '#003366'}} onMouseOver={e => { e.currentTarget.style.backgroundColor='#003366'; e.currentTarget.style.color='white' }} onMouseOut={e => { e.currentTarget.style.backgroundColor='transparent'; e.currentTarget.style.color='#003366' }}>Falar com Especialista</button>
+              </div>
             </div>
           </article>
         </div>
