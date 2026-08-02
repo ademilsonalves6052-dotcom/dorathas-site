@@ -733,10 +733,10 @@ function App() {
             </div>
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img 
-                src={hmDosadorVol} 
-                alt="Dosador Volumétrico" 
-                className="w-full h-48 object-cover"
+              <img
+                src={hmDosadorVol}
+                alt="Dosador Volumétrico"
+                className="w-full h-48 object-cover object-top"
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">Dosador Volumétrico</h3>
@@ -773,7 +773,7 @@ function App() {
               <img
                 src={hmMoinhoFresa}
                 alt="Moinhos Fresa"
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover object-top"
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">Moinho de Fresa</h3>

@@ -466,7 +466,7 @@ function AppVibrante() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
-              <img src={hmMoinhoFresa} alt="Moinho de Fresa" className="w-full h-48 object-cover" />
+              <img src={hmMoinhoFresa} alt="Moinho de Fresa" className="w-full h-48 object-cover object-top" />
               <div className="p-4">
                 <h4 className="font-bold text-lg mb-2" style={{color: '#003366'}}>Moinhos de Fresa</h4>
                 <p className="text-gray-600 text-sm">Equipamentos para moagem e reciclagem de plásticos com tecnologia avançada.</p>
@@ -506,7 +506,7 @@ function AppVibrante() {
             </div>
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
-              <img src={hmDosadorVol} alt="Dosador" className="w-full h-48 object-cover" />
+              <img src={hmDosadorVol} alt="Dosador" className="w-full h-48 object-cover object-top" />
               <div className="p-4">
                 <h4 className="font-bold text-lg mb-2" style={{color: '#003366'}}>Dosadores</h4>
                 <p className="text-gray-600 text-sm">Dosadores volumétricos e gravimétricos com precisão.</p>
